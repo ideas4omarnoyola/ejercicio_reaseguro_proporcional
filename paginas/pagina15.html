@@ -1,0 +1,669 @@
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 17</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Librerias -->
+    <script src="../js/librerias/jquery.min.js"></script>
+    <script src="../js/librerias/gsap.min.js"></script>
+
+    <!-- Script de animaciones -->
+    <script src="../js/animaciones.js"></script>
+    <!-- Scripts posicionar elementos -->
+    <script src="../js/redimensionarElementos.js"></script>
+    <script src="../js/posicionar.js"></script>
+
+</head>
+<body class="pagina">
+    <img class="elementos" id="titulo" src="../img/pagina18/titulo.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="img01" src="../img/pagina18/img01.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="img02" src="../img/pagina18/img02.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="img03" src="../img/pagina18/img03.png" data-posX="0" data-posY="0" alt="">
+    
+    
+    <input class="elementos campos" id="campo1" type="text" text-align="center" placeholder="%" id="canti1"  maxlength="11" data-posX="231.43" data-posY="330.232"  style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); " />
+    <input class="elementos campos" id="campo2" type="text" text-align="center" placeholder="%" id="canti2"  maxlength="11" data-posX="231.43" data-posY="360.501" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/> 
+    <input class="elementos campos" id="campo3" type="text" text-align="center" placeholder="%" id="cantidad-3"  maxlength="11" data-posX="231.43" data-posY="394.875 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo4" type="text" text-align="center" placeholder="%" id="cantidad-4"  maxlength="11" data-posX="366.808" data-posY="296.588 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo5" type="text" text-align="center" placeholder="%" id="cantidad-5"  maxlength="11" data-posX="366.808" data-posY="360.501 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo6" type="text" text-align="center" placeholder="%" id="cantidad-6"  maxlength="11" data-posX="366.808" data-posY="426.534" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo7" type="text" text-align="center" placeholder="%" id="cantidad-7"  maxlength="11" data-posX="507.628" data-posY="328.945" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo8" type="text" text-align="center" id="cantidad-8"  maxlength="11" data-posX="634.216" data-posY="296.588" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo9" type="text" text-align="center" id="cantidad-9"  maxlength="11" data-posX="634.216 " data-posY="394.177" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo10" type="text" text-align="center" id="cantidad-10"  maxlength="11" data-posX="634.216" data-posY="426.534" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+   
+    <input class="elementos campos" id="campo11" type="text" text-align="center" id="cantidad-11"  maxlength="11" data-posX="634.216" data-posY="458.909" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo12" type="text" text-align="center" id="cantidad-12"  maxlength="11" data-posX="753.125" data-posY="362.803" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo13" type="text" text-align="center" id="cantidad-13"  maxlength="11" data-posX="753.125 " data-posY="394.177" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo14" type="text" text-align="center" id="cantidad-14"  maxlength="11" data-posX="753.125 " data-posY="457.695 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo15" type="text" text-align="center" id="cantidad-15"  maxlength="11" data-posX="879.311" data-posY="328.945 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo16" type="text" text-align="center" id="cantidad-16"  maxlength="11" data-posX="879.311" data-posY="426.534 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo17" type="text" text-align="center" id="cantidad-17"  maxlength="11" data-posX="879.311" data-posY="457.909 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <!-- <input class="elementos campos" id="campo18" type="text" text-align="center" id="cantidad-18"  maxlength="11" data-posX="562" data-posY="415.606" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo19" type="text" text-align="center" id="cantidad-19"  maxlength="11" data-posX="562" data-posY="470.381 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+   
+    <input class="elementos campos" id="campo20" type="text" text-align="center" id="cantidad-20"  maxlength="11" data-posX="725" data-posY="359.708" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo21" type="text" text-align="center" id="cantidad-21"  maxlength="11" data-posX="725" data-posY="471.381 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo22" type="text" text-align="center" id="cantidad-22"  maxlength="11" data-posX="892" data-posY="274.454 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo23" type="text" text-align="center" id="cantidad-23"  maxlength="11" data-posX="892" data-posY="303.183" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo24" type="text" text-align="center" id="cantidad-24"  maxlength="11" data-posX="892" data-posY="333.029" style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+    <input class="elementos campos" id="campo25" type="text" text-align="center" id="cantidad-25"  maxlength="11" data-posX="892" data-posY="385.685 " style="width:90px;  height:18px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/> -->
+    
+
+
+
+
+    <img class="elementos"  id="palomita1"    src="../img/pagina18/palomita.png" data-posX="231.43" data-posY="330.232"        />
+    <img class="elementos"  id="palomita2"    src="../img/pagina18/palomita.png"  data-posX="231.43" data-posY="360.501"        />
+    <img class="elementos"  id="palomita3"    src="../img/pagina18/palomita.png"  data-posX="231.43" data-posY="394.875 "       />
+    <img class="elementos"  id="palomita4"    src="../img/pagina18/palomita.png"  data-posX="366.808" data-posY="296.588 "      />
+    <img class="elementos"  id="palomita5"    src="../img/pagina18/palomita.png"  data-posX="366.808" data-posY="360.501 "      />
+    <img class="elementos"  id="palomita6"    src="../img/pagina18/palomita.png"  data-posX="366.808" data-posY="426.534"       />
+    <img class="elementos"  id="palomita7"    src="../img/pagina18/palomita.png"  data-posX="507.628" data-posY="328.945"       />
+    <img class="elementos"  id="palomita8"    src="../img/pagina18/palomita.png"  data-posX="634.216" data-posY="296.588"       />
+    <img class="elementos"  id="palomita9"    src="../img/pagina18/palomita.png"  data-posX="634.216 " data-posY="394.177"      />
+    <img class="elementos"  id="palomita10"   src="../img/pagina18/palomita.png"  data-posX="634.216" data-posY="426.534"       />
+    <img class="elementos"  id="palomita11"   src="../img/pagina18/palomita.png"  data-posX="634.216" data-posY="458.909"       />
+    <img class="elementos"  id="palomita12"   src="../img/pagina18/palomita.png"  data-posX="753.125" data-posY="362.803"       />
+    <img class="elementos"  id="palomita13"   src="../img/pagina18/palomita.png"  data-posX="753.125 " data-posY="394.177"      />
+    <img class="elementos"  id="palomita14"   src="../img/pagina18/palomita.png"  data-posX="753.125 " data-posY="457.695 "     />
+    <img class="elementos"  id="palomita15"   src="../img/pagina18/palomita.png"  data-posX="879.311" data-posY="328.945 "      />
+    <img class="elementos"  id="palomita16"   src="../img/pagina18/palomita.png"  data-posX="879.311" data-posY="426.534 "      />
+    <img class="elementos"  id="palomita17"   src="../img/pagina18/palomita.png"  data-posX="879.311" data-posY="457.909 "      />
+
+
+    <img class="elementos"  id="tache1"    src="../img/pagina18/tache.png"  data-posX="231.43" data-posY="330.232"      />
+    <img class="elementos"  id="tache2"    src="../img/pagina18/tache.png"  data-posX="231.43" data-posY="360.501"      />
+    <img class="elementos"  id="tache3"    src="../img/pagina18/tache.png"  data-posX="231.43" data-posY="394.875 "     />
+    <img class="elementos"  id="tache4"    src="../img/pagina18/tache.png"  data-posX="366.808" data-posY="296.588 "    />
+    <img class="elementos"  id="tache5"    src="../img/pagina18/tache.png"  data-posX="366.808" data-posY="360.501 "    />
+    <img class="elementos"  id="tache6"    src="../img/pagina18/tache.png"  data-posX="366.808" data-posY="426.534"     />
+    <img class="elementos"  id="tache7"    src="../img/pagina18/tache.png"  data-posX="507.628" data-posY="328.945"     />
+    <img class="elementos"  id="tache8"    src="../img/pagina18/tache.png"  data-posX="634.216" data-posY="296.588"     />
+    <img class="elementos"  id="tache9"    src="../img/pagina18/tache.png"  data-posX="634.216 " data-posY="394.177"    />
+    <img class="elementos"  id="tache10"   src="../img/pagina18/tache.png"  data-posX="634.216" data-posY="426.534"     />
+    <img class="elementos"  id="tache11"   src="../img/pagina18/tache.png"  data-posX="634.216" data-posY="458.909"     />
+    <img class="elementos"  id="tache12"   src="../img/pagina18/tache.png"  data-posX="753.125" data-posY="362.803"     />
+    <img class="elementos"  id="tache13"   src="../img/pagina18/tache.png"  data-posX="753.125 " data-posY="394.177"    />
+    <img class="elementos"  id="tache14"   src="../img/pagina18/tache.png"  data-posX="753.125 " data-posY="457.695 "   />
+    <img class="elementos"  id="tache15"   src="../img/pagina18/tache.png"  data-posX="879.311" data-posY="328.945 "    />
+    <img class="elementos"  id="tache16"   src="../img/pagina18/tache.png"  data-posX="879.311" data-posY="426.534 "    />
+    <img class="elementos"  id="tache17"   src="../img/pagina18/tache.png"  data-posX="879.311" data-posY="457.909 "    />
+
+    <img class="elementos" id="btncasa"      src="../img/pagina18/btn1.png" data-posX="887.461" data-posY="86.934" alt="">
+    <img class="elementos" id="verificar" src="../img/pagina18/verificar.png" data-posX="760" data-posY="86.934"/>
+
+    <img class="elementos" id="base" src="../img/pagina16/base.png" data-posX="0" data-posY="0"/>    
+    <img class="elementos" id="cuadro1" src="../img/pagina16/cuadro1.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="cuadro2" src="../img/pagina16/cuadro2.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="cuadro3" src="../img/pagina16/cuadro3.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="cuadro4" src="../img/pagina16/cuadro4.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="cerrar"     src="../img/pagina16/cerrar.png"    data-posX="948" data-posY="121"/>
+    <img class="elementos" id="atras" src="../img/pagina12/atras.png" data-posX="948" data-posY="170" alt="">
+    <img class="elementos" id="adelante" src="../img/pagina12/adelante.png" data-posX="948" data-posY="225" alt="">
+
+    <img class="elementos" id="cerrar"     src="../img/pagina18/cerrar.png"    data-posX="894.417" data-posY="121.847"/>
+
+    <!-- Retroalimentaciones -->
+    <img class="elementos" id="retroPositiva" src="../img/pagina18/retroPositiva.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="retroNegativa" src="../img/pagina18/retroNegativa.png" data-posX="0" data-posY="0"/>
+    <div class="elementos" id="promedio"></div>
+    <!-- Script de la página -->
+    <script>
+
+        // Variable----------------------------------------------------
+        let aplicacion = parent;
+
+        const titulo = $('#titulo');
+        const img01 = $('#img01');
+        const img02 = $('#img02');
+        const img03 = $('#img03');
+        const btnCasa = $('#btncasa');
+        const datos = $('#datos');
+        const cerrar = $('#cerrar');
+
+        const base = $('#base');
+        const cuadro1 = $('#cuadro1');
+        const cuadro2 = $('#cuadro2');
+        const cuadro3 = $('#cuadro3');
+        const cuadro4 = $('#cuadro4');
+        const atras = $('#atras');
+        const adelante = $('#adelante');
+
+        atras.css('cursor', 'pointer');
+        cerrar.css('cursor', 'pointer');
+
+        const slides = [
+            cuadro1,
+            cuadro2,
+            cuadro3,
+            cuadro4
+        ]
+
+        let noSlide = 0;
+        
+        const campo1  = $('#campo1');
+        const campo2  = $('#campo2');
+        const campo3  = $('#campo3');
+        const campo4  = $('#campo4');
+        const campo5  = $('#campo5');
+        const campo6  = $('#campo6');
+        const campo7  = $('#campo7');
+        const campo8  = $('#campo8');
+        const campo9  = $('#campo9');
+        const campo10 = $('#campo10');
+        const campo11 = $('#campo11');
+        const campo12 = $('#campo12');
+        const campo13 = $('#campo13');
+        const campo14 = $('#campo14');
+        const campo15 = $('#campo15');
+        const campo16 = $('#campo16');
+        const campo17 = $('#campo17');
+        const campos = $('.campos');
+        // const campo18 = $('#campo18');
+        // const campo19 = $('#campo19');
+        // const campo20 = $('#campo20');
+        // const campo21 = $('#campo21');
+        // const campo22 = $('#campo22');
+        // const campo23 = $('#campo23');
+        // const campo24 = $('#campo24');
+        // const campo25 = $('#campo25');
+
+        
+
+        const verificar = $('#verificar');
+        const positiva = $('#retroPositiva');
+        const negativa = $('#retroNegativa');
+        const reintentar = $('#reintentar');
+        const reiniciar = $('#reiniciar');
+
+        const promedio = $('#promedio');
+        let colocados = 0;
+        let aciertos = 0;
+        const palomita1  = $('#palomita1');
+        const palomita2  = $('#palomita2');
+        const palomita3  = $('#palomita3');
+        const palomita4  = $('#palomita4');
+        const palomita5  = $('#palomita5');
+        const palomita6  = $('#palomita6');
+        const palomita7  = $('#palomita7');
+        const palomita8  = $('#palomita8');
+        const palomita9  = $('#palomita9');
+        const palomita10  = $('#palomita10');
+        const palomita11  = $('#palomita11');
+        const palomita12  = $('#palomita12');
+        const palomita13  = $('#palomita13');
+        const palomita14  = $('#palomita14');
+        const palomita15  = $('#palomita15');
+        const palomita16  = $('#palomita16');
+        const palomita17  = $('#palomita17');
+        const tache1  = $('#tache1');
+        const tache2  = $('#tache2');
+        const tache3  = $('#tache3');
+        const tache4  = $('#tache4');
+        const tache5  = $('#tache5');
+        const tache6  = $('#tache6');
+        const tache7  = $('#tache7');
+        const tache8  = $('#tache8');
+        const tache9  = $('#tache9');
+        const tache10  = $('#tache10');
+        const tache11  = $('#tache11');
+        const tache12  = $('#tache12');
+        const tache13  = $('#tache13');
+        const tache14  = $('#tache14');
+        const tache15  = $('#tache15');
+        const tache16  = $('#tache16');
+        const tache17  = $('#tache17');
+
+        const respuesta1 =  ["21"]
+        const respuesta2 =  ["13"]
+        const respuesta3 =  ["4"]
+        const respuesta4 =  ["46"]
+        const respuesta5 =  ["87"]
+        const respuesta6 =  ["22"]
+        const respuesta7 =  ["0"]
+        const respuesta8 =  ["194"]
+        const respuesta9 =  ["2"]
+        const respuesta10 = ["1"]
+        const respuesta11 = ["237"]
+        const respuesta12 = ["65"]
+        const respuesta13 = ["16"]
+        const respuesta14 = ["372"]
+        const respuesta15 = ["0"]
+        const respuesta16 = ["38"]
+        const respuesta17 = ["0"]
+        // const respuesta18 = ["84"]
+        // const respuesta19 = ["18"]
+        // const respuesta20 = ["624"]
+        // const respuesta21 = ["353"]
+        // const respuesta22 = ["0"]
+        // const respuesta23 = ["0"]
+        // const respuesta24 = ["0"]
+        // const respuesta25 = ["0"]
+
+        
+        // Audios------------------------------------------------------
+        const audio = [
+        new Audio('../audios/audio0.mp3'),
+        new Audio('../audios/audio0.mp3'),
+        new Audio('../audios/Patria_EjerciciosProporcional_20_01.mp3'),
+        new Audio('../audios/you_win1.mp3'),
+        new Audio('../audios/failure-01.mp3'),
+
+        ]
+
+        const audiosSlides = [  
+            new Audio('../audios/audio0.mp3'),
+            new Audio('../audios/audio0.mp3'),
+            new Audio('../audios/audio0.mp3'),
+            new Audio('../audios/audio0.mp3')
+        ]
+
+        // Al cargarse la página
+        $(window).on("load", function(){
+            redimensionarElementos();
+            aplicacion.activarBotonAtras();
+            aplicacion.cargando(iniciarContenido);
+        });
+
+        function iniciarContenido(){
+            aplicacion.reproducirAudio(audio[0], terminaAudio0, 1);
+            animacionEntrada(titulo, 'default', 1, 1);
+            setTimeout(()=>{
+                btnCasa.css({'cursor': 'pointer'})
+            }, 1000);
+
+        }
+        function terminaAudio0(){
+            aplicacion.reproducirAudio(audio[1], terminaAudio1, 1);
+            animacionEntrada(img01, 'default', 1, 0);
+            
+
+        }
+        function terminaAudio1(){
+
+            aplicacion.reproducirAudio(audio[2], terminaAudio2, 1);
+            animacionEntrada(img02, 'default', 1, 0);
+            animacionEntrada(campo1, 'default', 1, 1);
+            animacionEntrada(campo2, 'default', 1, 1);
+            animacionEntrada(campo3, 'default', 1, 1);
+            animacionEntrada(campo4, 'default', 1, 1);
+            animacionEntrada(campo5, 'default', 1, 1);
+            animacionEntrada(campo6, 'default', 1, 1);
+            animacionEntrada(campo7, 'default', 1, 1);
+            animacionEntrada(campo8, 'default', 1, 1);
+            animacionEntrada(campo9, 'default', 1, 1);
+            animacionEntrada(campo10, 'default', 1, 1);
+            animacionEntrada(campo11, 'default', 1, 1);
+            animacionEntrada(campo12, 'default', 1, 1);
+            animacionEntrada(campo13, 'default', 1, 1);
+            animacionEntrada(campo14, 'default', 1, 1);
+            animacionEntrada(campo15, 'default', 1, 1);
+            animacionEntrada(campo16, 'default', 1, 1);
+            animacionEntrada(campo17, 'default', 1, 1);
+            // animacionEntrada(campo18, 'default', 1, 1);
+            // animacionEntrada(campo19, 'default', 1, 1);
+            // animacionEntrada(campo20, 'default', 1, 1);
+            // animacionEntrada(campo21, 'default', 1, 1);
+            // animacionEntrada(campo22, 'default', 1, 1);
+            // animacionEntrada(campo23, 'default', 1, 1);
+            // animacionEntrada(campo24, 'default', 1, 1);
+            // animacionEntrada(campo25, 'default', 1, 1);
+        }         
+
+        function terminaAudio2(){
+            //aplicacion.terminaPantalla();
+             //parpadear(verificar);
+           //  parpadear(btncasa);
+           animacionEntrada(btnCasa, 'default', 1, 1);
+           
+
+             //camposllenos();
+         }
+
+        campos.each(function(){
+            $(this).on('input', function(){
+
+                const inputs = [
+                    campo1.val(),
+                    campo2.val(),
+                    campo3.val(),
+                    campo4.val(),
+                    campo5.val(),
+                    campo6.val(),
+                    campo7.val(),
+                    campo8.val(),
+                    campo9.val(),
+                    campo10.val(),
+                    campo11.val(),
+                    campo12.val(),
+                    campo13.val(),
+                    campo14.val(),
+                    campo15.val(),
+                    campo16.val(),
+                    campo17.val()
+                ]
+                
+                if(!inputs.includes('')){
+                    parpadear(verificar);
+                }
+            });
+        });
+
+        // function camposllenos(){
+        //      console.log("esta llenando campos..."  );
+        //     if( valorObtenido == !null ) {
+
+        //        parpadear(verificar);
+        //     }
+
+        //     //  if( campo1 == null || campo1.length == 0 || /^\s+$/.test(campo1) ) {
+        //     //     return false;
+        //     //    alert("por favor llena todos los campos");
+        //     // }
+        // }
+        //  btn1.click(function(){
+        //     if(btn1.css('cursor') == 'pointer'){
+        //         dejarParpadear(btn1);
+        //         aplicacion.siguientePagina();
+        //     }
+        // });
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+verificar.click(function(){
+    if(verificar.css('cursor') == 'pointer'){
+                    //animacionEntrada(palomitas[dragSelect-1], 'default', 1, 1);
+                    dejarParpadear(verificar);
+
+                    // setTimeout(()=>{
+                    //     //salidaEjercicio();
+                    // }, 2500);
+
+
+                    let valorObtenido  = $("#campo1").val();
+                    let valorObtenido2 = $("#campo2").val();
+                    let valorObtenido3 = $("#campo3").val();
+                    let valorObtenido4 = $("#campo4").val();
+                    let valorObtenido5 = $("#campo5").val();
+                    let valorObtenido6 = $("#campo6").val();
+                    let valorObtenido7 = $("#campo7").val();
+                    let valorObtenido8 = $("#campo8").val();
+                    let valorObtenido9 = $("#campo9").val();
+                    let valorObtenido10 = $("#campo10").val();
+                    let valorObtenido11 = $("#campo11").val();
+                    let valorObtenido12 = $("#campo12").val();
+                    let valorObtenido13 = $("#campo13").val();
+                    let valorObtenido14 = $("#campo14").val();
+                    let valorObtenido15 = $("#campo15").val();
+                    let valorObtenido16 = $("#campo16").val();
+                    let valorObtenido17 = $("#campo17").val();
+                    // let valorObtenido18 = $("#campo18").val();
+                    // let valorObtenido19 = $("#campo19").val();
+                    // let valorObtenido20 = $("#campo20").val();
+                    // let valorObtenido21 = $("#campo21").val();
+                    // let valorObtenido22 = $("#campo22").val();
+                    // let valorObtenido23 = $("#campo23").val();
+                    // let valorObtenido24 = $("#campo24").val();
+                    // let valorObtenido25 = $("#campo25").val();
+
+                    console.log("es resp..." + respuesta1 );
+                    console.log("es resp..." + respuesta2 );
+                    console.log("es valorObtenido..." + valorObtenido );
+                    console.log("es valorObtenido2..." + valorObtenido2 );
+
+
+               if(valorObtenido == respuesta1[0]){
+                        console.log("Bien :) " + valorObtenido);
+                   animacionEntrada(palomita1, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache1, 'default', 1, 0);}
+                if(valorObtenido2 == respuesta2[0]){
+                    animacionEntrada(palomita2, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache2, 'default', 1, 0);}
+                if(valorObtenido3 == respuesta3[0]){
+                    animacionEntrada(palomita3, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache3, 'default', 1, 0);}
+                if(valorObtenido4 == respuesta4[0]){
+                    animacionEntrada(palomita4, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache4, 'default', 1, 0);}
+                if(valorObtenido5 == respuesta5[0]){
+                    animacionEntrada(palomita5, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache5, 'default', 1, 0);}
+                if(valorObtenido6 == respuesta6[0]){
+                    animacionEntrada(palomita6, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache6, 'default', 1, 0);}
+                if(valorObtenido7 == respuesta7[0]){
+                    animacionEntrada(palomita7, 'default', 1, 0);
+                   aciertos++                    
+               }else{animacionEntrada(tache8, 'default', 1, 0);}
+               if(valorObtenido8 == respuesta8[0]){
+                    animacionEntrada(palomita8, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache8, 'default', 1, 0);}
+                if(valorObtenido9 == respuesta9[0]){
+                    animacionEntrada(palomita9, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache9, 'default', 1, 0);}
+                if(valorObtenido10 == respuesta10[0]){
+                    animacionEntrada(palomita10, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache10, 'default', 1, 0);}
+                if(valorObtenido11 == respuesta11[0]){
+                    animacionEntrada(palomita11, 'default', 1, 0);
+                   aciertos++                    
+               }else{animacionEntrada(tache11, 'default', 1, 0);}
+               if(valorObtenido12 == respuesta12[0]){
+                    animacionEntrada(palomita12, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache12, 'default', 1, 0);}
+                if(valorObtenido13 == respuesta13[0]){
+                    animacionEntrada(palomita13, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache13, 'default', 1, 0);}
+                if(valorObtenido14 == respuesta14[0]){
+                    animacionEntrada(palomita14, 'default', 1, 0);
+                   aciertos++                    
+               }else{animacionEntrada(tache14, 'default', 1, 0);}
+               if(valorObtenido15 == respuesta15[0]){
+                    animacionEntrada(palomita15, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache15, 'default', 1, 0);}
+                if(valorObtenido16 == respuesta16[0]){
+                    animacionEntrada(palomita16, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache16, 'default', 1, 0);}
+                if(valorObtenido17 == respuesta17[0]){
+                    animacionEntrada(palomita17, 'default', 1, 0);
+                    aciertos++                    
+                }else{animacionEntrada(tache17, 'default', 1, 0);}
+               //  if(valorObtenido18 == respuesta18[0]){
+               //      //animacionEntrada(palomita2, 'default', 1, 0);
+               //      aciertos++                    
+               //  }
+               //  if(valorObtenido19 == respuesta19[0]){
+               //      //animacionEntrada(palomita2, 'default', 1, 0);
+               //      aciertos++                    
+               //  }
+               //  if(valorObtenido20 == respuesta20[0]){
+               //      //animacionEntrada(palomita2, 'default', 1, 0);
+               //      aciertos++                    
+               //  }
+               //  if(valorObtenido21 == respuesta21[0]){
+               //      //animacionEntrada(palomita2, 'default', 1, 0);
+               //      aciertos++                    
+               //  }
+               //  if(valorObtenido22 == respuesta22[0]){
+               //      //animacionEntrada(palomita2, 'default', 1, 0);
+               //      aciertos++                    
+               //  }
+               //  if(valorObtenido23 == respuesta23[0]){
+               //      //animacionEntrada(palomita2, 'default', 1, 0);
+               //      aciertos++                    
+               //  }
+               //  if(valorObtenido24 == respuesta24[0]){
+               //      //animacionEntrada(palomita2, 'default', 1, 0);
+               //      aciertos++                    
+               //  }
+               //   if(valorObtenido25 == respuesta25[0]){
+               //      //animacionEntrada(palomita2, 'default', 1, 0);
+               //      aciertos++                    
+               //  }
+
+                evaluar()
+
+                
+
+            }////
+        });
+
+
+
+function evaluar(){
+    const calificacion = Math.round((aciertos * 100) / 17);
+
+               const intento = aplicacion.verIntento();
+               animacionSalida(btncasa, 'default', 1, 0); 
+               if(calificacion >= 80 && intento <= 2){
+                //aplicacion.guardarCalificacion(calificacion);
+                retroPositiva(calificacion);
+                aplicacion.reproducirAudio(audio[3], 0, 1);
+            }
+            else if(calificacion < 80 && intento == 1){
+                //aplicacion.siguienteIntento();
+                retroNegativa(calificacion);
+                aplicacion.reproducirAudio(audio[4], 0, 1);
+               // aplicacion.compararCalificaciones(calificacion);
+           }
+           else{
+                //aplicacion.siguienteIntento();
+                retroFinal(calificacion);
+            } 
+
+            let aciertosTotales = aplicacion.aciertosTotales();
+            aciertosTotales = aciertosTotales+calificacion;// si funciona
+            aplicacion.actualizarAciertostotales(aciertosTotales);
+            console.log("sumatoria..12 " + aciertosTotales);
+
+
+        }
+
+        function retroPositiva(calificacion){
+            promedio.html(calificacion);
+            promedio.css({
+                'fontSize': '32px',
+                'color': '#002F87', 
+                'top': '320px',
+                'left': '500px'
+            });
+
+            animacionEntrada(positiva, 'default', 1, 2);
+            animacionEntrada(promedio, 'default', 1, 2);
+            aplicacion.terminaPantalla();
+        }       
+
+
+
+        function retroNegativa(calificacion){
+            promedio.html(calificacion);
+            promedio.css({
+                'fontSize': '32px',
+                'color': '#002F87', 
+                'top': '250px',
+                'left': '510px'
+            });
+            
+            animacionEntrada(negativa, 'default', 1, 2);
+            animacionEntrada(promedio, 'default', 1, 2);
+            aplicacion.terminaPantalla();
+        }
+
+
+        btnCasa.click(function(){
+            if(btnCasa.css('cursor') == 'pointer'){
+                animacionEntrada(base, 'default', 1);
+                animacionEntrada(cerrar, 'default', 1);
+                carrusel();
+            }
+        });
+
+        cerrar.click(function(){
+            if(cerrar.css('cursor') == 'pointer'){
+                //dejarParpadear(cerrar);                
+                animacionSalida(base, 'default', 1, 0);
+                animacionSalida(cuadro1, 'default', 1, 0);
+                animacionSalida(cuadro2, 'default', 1, 0);
+                animacionSalida(cuadro3, 'default', 1, 0);
+                animacionSalida(cuadro4, 'default', 1, 0);
+                animacionSalida(atras, 'default', 1, 0);
+                animacionSalida(adelante, 'default', 1, 0);
+                animacionSalida(cerrar, 'default', 1, 0);
+
+                noSlide = 0;
+            }
+        });
+
+        function carrusel(){
+            aplicacion.reproducirAudio(audiosSlides[noSlide], botonAdelante, 1);
+            animacionEntrada(slides[noSlide], 'default', 1, 1);
+
+            if(noSlide > 0 & atras.css('display') == 'none'){
+                animacionEntrada(atras, 'default', 1, 1);
+            }
+        }
+
+        function botonAdelante(){
+            if(noSlide < slides.length -1){
+                parpadear(adelante);
+            }
+        }
+
+        adelante.click(function(){
+            if(adelante.css('cursor') == 'pointer'){
+                animacionSalida(slides[noSlide], 'default', 1);
+                aplicacion.detenerAudios();
+                dejarParpadear(adelante);
+                animacionSalida(adelante, 'default', 1);
+                noSlide++;
+                setTimeout(()=>{
+                    carrusel(noSlide);
+                }, 500);
+            }
+        });
+
+        atras.click(function(){
+            if(noSlide > 0){
+                animacionSalida(slides[noSlide], 'default', 1);
+                aplicacion.detenerAudios();
+                noSlide--;
+                
+                setTimeout(()=>{
+                    carrusel(noSlide);
+                }, 500);
+            }
+        });
+
+
+    </script>
+</body>
+<!--  <style >
+            #campos {
+                 text-align: center; 
+                 font-size: 12px; 
+                 font-weight: bold; 
+                 background-color: rgba(255, 255, 255, 1); 
+            }
+
+        </style> -->
+        </html> 

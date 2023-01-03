@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso | Ideas4Learning</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/interfaz/favicon-32x32.png">
+
+    <!-- Iconos -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <!-- Scripts y Librerias -->
+    <script src="./js/librerias/SCORM_API_wrapper.js"></script>
+    <script src="./js/librerias/jquery.min.js"></script>
+    <script src="./js/librerias/jquery-ui.min.js"></script>
+    <script src="./js/librerias/jquery.ui.touch-punch.min.js"></script>
+    <script src="./js/librerias/gsap.min.js"></script>
+
+</head>
+<body class="cont-principal">
+    
+    <div class="interfaz">
+
+        <!-- Spinner -->
+        <div id="spinner"></div>
+
+        <!-- Contenedor de visualización de las páginas -->
+        <iframe class="cont-paginas">
+
+        </iframe>
+
+        <!-- Contenedor de los botones de navegación -->
+        <div class="navegacion">
+            <button class="btnNavegacion" id="adelante">
+                <img src="./img/interfaz/delante.png" alt="">
+            </button>
+            <button class="btnNavegacion" id="atras">
+                <img src="./img/interfaz/atras.png" alt="">
+            </button>
+            <button class="btnNavegacion" id="audio">
+                <img src="./img/interfaz/audio.png" alt="">
+            </button>
+            <button class="btnNavegacion" id="recargar">
+                <img src="./img/interfaz/recargar.png" alt="">
+            </button>
+            <button class="btnNavegacion" id="temario">
+                <img src="./img/interfaz/menu.png" alt="">
+            </button>
+        </div>
+
+        <!-- Barra de progreso -->
+        <div class="cont-progreso">
+            <p class="relacion">
+                
+            </p>
+            <div class="barra">
+                <div class="porcentaje">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contendor del temario -->
+        <div class="temario">
+            <div class="contenedor-temas">
+                <div class="cerrar" title="Cerrar">
+                    <i class='bx bxs-arrow-to-left' ></i>
+                </div>
+                <div class="titulo">
+                    <h1>Temario</h1>
+                </div>
+                <div class="cont-temas">
+                    <ul>
+                        <li class="temas" data-pagina="1">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Bienvenida</p>
+                        </li>
+                        <li class="temas" data-pagina="2">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Ejercicio 1</p>
+                        </li>
+                        <li class="temas" data-pagina="4">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Ejercicio 2</p>
+                        </li>
+                        <li class="temas" data-pagina="6">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Ejercicio 3</p>
+                        </li>
+                        <li class="temas" data-pagina="8">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Ejercicio 4</p>
+                        </li>
+                       <!--  <li class="temas" data-pagina="6">
+                            <i class='bx bx-square-rounded' ></i>
+                            <p>Clasificación técnica</p>
+                            
+                        </li> -->
+                        <li class="temas" data-pagina="11">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Ejercicio 5</p>
+                            
+                        </li>
+                       <li class="temas" data-pagina="12">
+                            <i class='bx bx-square-rounded' ></i>
+                            <p>Ejercicio 6</p> 
+                            
+                        </li>
+                        
+                        <li class="temas" data-pagina="17">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Cierre</p>
+                        </li>   
+                       <!--  <li class="temas" data-pagina="11">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Pago de prima</p>
+                        </li>   -->
+                        <!-- <li class="temas" data-pagina="12">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Mapa de zonas sismicas</p>
+                        </li>  
+                        <li class="temas" data-pagina="13">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Tabla de tarifas</p>
+                        </li> 
+                        <li class="temas" data-pagina="14">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Cotización</p>
+                        </li> 
+                         <li class="temas" data-pagina="15">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Reaseguro Facultativo en exceso de perdida</p>
+                        </li>  -->
+                        <!--  <li class="temas" data-pagina="16">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Reaseguro Facultativo en exceso de perdida</p>
+                        </li>  -->
+                         <!-- <li class="temas" data-pagina="17">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Diferencias entre Facultativo Proporcional y No Proporcional </p>
+                            
+                        </li>
+                         <li class="temas" data-pagina="18">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Ventajas y desventajas del Reaseguro Facultativo No Proporcional</p>
+                            
+                        </li> 
+                          <li class="temas" data-pagina="19">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>cotización de negocios</p>
+                            
+                        </li>
+                         <li class="temas" data-pagina="20">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Nivel de Exposición de una perdida</p>
+                            
+                        </li>
+                        <li class="temas" data-pagina="21">
+                            <i class='bx bx-square-rounded' ></i>                            
+                            <p>Excala primera pérdida de Lloyd's</p>
+                        </li> 
+                         <li class="temas" data-pagina="22">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Contización por exposición</p>
+                        </li> 
+                         <li class="temas" data-pagina="23">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Experiencia de siniestros</p>
+                        </li>
+                                     
+                        <li class="temas" data-pagina="24">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Evaluación final</p>
+                        </li>  -->
+                        <!-- <li class="temas" data-pagina="26">
+                            <i class='bx bx-square-rounded' ></i> 
+                            <p>Cierre</p>
+                        </li>  -->   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bienvenida">
+        <h1>¡Bienvenido!</h1>
+        <h3>¿Estas listo para tu aprendizaje?</h3>
+        <h3 id="legend">Presiona el botón</h3>
+        <button id="comenzar">Comenzar</button>
+    </div>
+
+    <!-- Scripts de la App -->
+    <script src="./js/selectores.js"></script>
+    <script src="./js/paginas.js"></script>
+    <script src="./js/animaciones.js"></script>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/redimensionarInterfaz.js"></script>
+    <script src="./js/clase/App.js"></script>
+    <script src="./js/conexionMoodle.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

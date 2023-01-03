@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 03</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Librerias -->
+    <script src="../js/librerias/jquery.min.js"></script>
+    <script src="../js/librerias/jquery-ui.min.js"></script>
+    <script src="../js/librerias/jquery.ui.touch-punch.min.js"></script>
+    <script src="../js/librerias/gsap.min.js"></script>
+
+    <!-- Script de animaciones -->
+    <script src="../js/animaciones.js"></script>
+    <!-- Scripts posicionar elementos -->
+    <script src="../js/redimensionarElementos.js"></script>
+    <script src="../js/posicionar.js"></script>
+
+</head>
+<body class="pagina">
+    <img class="elementos" id="texto" src="../img/pagina03/texto.png" data-posX="0" data-posY="0" alt="">
+
+    <img class="elementos" id="fondoA" src="../img/pagina03/fondoA.png" data-posX="0" data-posY="0" alt="">
+
+    <img class="elementos drops1" id="drop1" data-lugar="1" src="../img/pagina03/drop.png" data-posX="178" data-posY="288" alt="">
+    <img class="elementos drops1" id="drop2" data-lugar="2" src="../img/pagina03/drop.png" data-posX="484" data-posY="288" alt="">
+    <img class="elementos drops1" id="drop3" data-lugar="3" src="../img/pagina03/drop.png" data-posX="178" data-posY="312" alt="">
+    <img class="elementos drops1" id="drop4" data-lugar="4" src="../img/pagina03/drop.png" data-posX="328" data-posY="312" alt="">
+    <img class="elementos drops1" id="drop5" data-lugar="5" src="../img/pagina03/drop.png" data-posX="318" data-posY="340" alt="">
+    <img class="elementos drops1" id="drop6" data-lugar="6" src="../img/pagina03/drop.png" data-posX="474" data-posY="340" alt="">
+    
+    <img class="elementos drags1" id="drag1" data-lugar="1" src="../img/pagina03/drag1.png" data-posX="868" data-posY="276" alt="">    
+    <img class="elementos drags1" id="drag2" data-lugar="2" src="../img/pagina03/drag2.png" data-posX="868" data-posY="253" alt="">    
+    <img class="elementos drags1" id="drag3" data-lugar="3" src="../img/pagina03/drag3.png" data-posX="735" data-posY="277" alt="">
+    <img class="elementos drags1" id="drag4" data-lugar="4" src="../img/pagina03/drag4.png" data-posX="735" data-posY="301" alt=""> 
+    <img class="elementos drags1" id="drag5" data-lugar="5" src="../img/pagina03/drag5.png" data-posX="901" data-posY="301" alt=""> 
+    <img class="elementos drags1" id="drag6" data-lugar="6" src="../img/pagina03/drag6.png" data-posX="735" data-posY="253" alt=""> 
+
+    <img class="elementos drops2" id="drop7" data-lugar="7" src="../img/pagina03/drop.png" data-posX="331" data-posY="439" alt="">
+    <img class="elementos drops2" id="drop8" data-lugar="8" src="../img/pagina03/drop.png" data-posX="479" data-posY="439" alt="">
+    <img class="elementos drops2" id="drop9" data-lugar="9" src="../img/pagina03/drop.png" data-posX="180" data-posY="463" alt="">
+    <img class="elementos drops2" id="drop10" data-lugar="10" src="../img/pagina03/drop.png" data-posX="479" data-posY="463" alt="">
+    <img class="elementos drops2" id="drop11" data-lugar="11" src="../img/pagina03/drop.png" data-posX="331" data-posY="489" alt="">
+    <img class="elementos drops2" id="drop12" data-lugar="12" src="../img/pagina03/drop.png" data-posX="479" data-posY="489" alt="">
+    
+    <img class="elementos drags2" id="drag7" data-lugar="7" src="../img/pagina03/drag7.png" data-posX="879" data-posY="435" alt="">    
+    <img class="elementos drags2" id="drag8" data-lugar="8" src="../img/pagina03/drag8.png" data-posX="761" data-posY="413" alt="">    
+    <img class="elementos drags2" id="drag9" data-lugar="9" src="../img/pagina03/drag9.png" data-posX="884" data-posY="457" alt="">
+    <img class="elementos drags2" id="drag10" data-lugar="10" src="../img/pagina03/drag10.png" data-posX="753" data-posY="435" alt="">
+    <img class="elementos drags2" id="drag11" data-lugar="11" src="../img/pagina03/drag11.png" data-posX="887" data-posY="413" alt="">
+    <img class="elementos drags2" id="drag12" data-lugar="12" src="../img/pagina03/drag12.png" data-posX="753" data-posY="457" alt="">
+
+    <img class="elementos" id="fondoB" src="../img/pagina03/fondoB.png" data-posX="0" data-posY="0" alt="">
+
+    <img class="elementos drops3" id="drop13" data-lugar="13" src="../img/pagina03/drop.png" data-posX="180" data-posY="261" alt="">
+    <img class="elementos drops3" id="drop14" data-lugar="14" src="../img/pagina03/drop.png" data-posX="331" data-posY="261" alt="">
+    <img class="elementos drops3" id="drop15" data-lugar="15" src="../img/pagina03/drop.png" data-posX="479" data-posY="261" alt="">
+    <img class="elementos drops3" id="drop16" data-lugar="16" src="../img/pagina03/drop.png" data-posX="180" data-posY="286" alt="">
+    <img class="elementos drops3" id="drop17" data-lugar="17" src="../img/pagina03/drop.png" data-posX="331" data-posY="286" alt="">
+    <img class="elementos drops3" id="drop18" data-lugar="18" src="../img/pagina03/drop.png" data-posX="479" data-posY="286" alt="">
+    <img class="elementos drops3" id="drop19" data-lugar="19" src="../img/pagina03/drop.png" data-posX="331" data-posY="312" alt="">
+    <img class="elementos drops3" id="drop20" data-lugar="20" src="../img/pagina03/drop.png" data-posX="479" data-posY="312" alt="">
+    
+    <img class="elementos drags3" id="drag13" data-lugar="13" src="../img/pagina03/drag13.png" data-posX="745" data-posY="275" alt="">    
+    <img class="elementos drags3" id="drag14" data-lugar="14" src="../img/pagina03/drag14.png" data-posX="881" data-posY="275" alt="">    
+    <img class="elementos drags3" id="drag15" data-lugar="15" src="../img/pagina03/drag15.png" data-posX="881" data-posY="253" alt="">
+    <img class="elementos drags3" id="drag16" data-lugar="16" src="../img/pagina03/drag16.png" data-posX="746" data-posY="251" alt=""> 
+    <img class="elementos drags3" id="drag17" data-lugar="17" src="../img/pagina03/drag17.png" data-posX="881" data-posY="322" alt=""> 
+    <img class="elementos drags3" id="drag18" data-lugar="18" src="../img/pagina03/drag18.png" data-posX="745" data-posY="298" alt=""> 
+    <img class="elementos drags3" id="drag19" data-lugar="19" src="../img/pagina03/drag19.png" data-posX="765" data-posY="321" alt=""> 
+    <img class="elementos drags3" id="drag20" data-lugar="20" src="../img/pagina03/drag20.png" data-posX="887" data-posY="299" alt=""> 
+
+    <img class="elementos drops4" id="drop21" data-lugar="21" src="../img/pagina03/drop.png" data-posX="180" data-posY="439" alt="">
+    <img class="elementos drops4" id="drop22" data-lugar="22" src="../img/pagina03/drop.png" data-posX="331" data-posY="439" alt="">
+    <img class="elementos drops4" id="drop23" data-lugar="23" src="../img/pagina03/drop.png" data-posX="479" data-posY="439" alt="">
+    <img class="elementos drops4" id="drop24" data-lugar="24" src="../img/pagina03/drop.png" data-posX="180" data-posY="463" alt="">
+    <img class="elementos drops4" id="drop25" data-lugar="25" src="../img/pagina03/drop.png" data-posX="331" data-posY="463" alt="">
+    <img class="elementos drops4" id="drop26" data-lugar="26" src="../img/pagina03/drop.png" data-posX="479" data-posY="463" alt="">
+    <img class="elementos drops4" id="drop27" data-lugar="27" src="../img/pagina03/drop.png" data-posX="325" data-posY="488" alt="">
+    <img class="elementos drops4" id="drop28" data-lugar="28" src="../img/pagina03/drop.png" data-posX="479" data-posY="488" alt="">
+    
+    <img class="elementos drags4" id="drag21" data-lugar="21" src="../img/pagina03/drag21.png" data-posX="868" data-posY="482" alt="">    
+    <img class="elementos drags4" id="drag22" data-lugar="22" src="../img/pagina03/drag22.png" data-posX="736" data-posY="435" alt="">    
+    <img class="elementos drags4" id="drag23" data-lugar="23" src="../img/pagina03/drag23.png" data-posX="867" data-posY="435" alt="">
+    <img class="elementos drags4" id="drag24" data-lugar="24" src="../img/pagina03/drag24.png" data-posX="740" data-posY="413" alt=""> 
+    <img class="elementos drags4" id="drag25" data-lugar="25" src="../img/pagina03/drag25.png" data-posX="867" data-posY="413" alt=""> 
+    <img class="elementos drags4" id="drag26" data-lugar="26" src="../img/pagina03/drag26.png" data-posX="867" data-posY="458" alt=""> 
+    <img class="elementos drags4" id="drag27" data-lugar="27" src="../img/pagina03/drag27.png" data-posX="735" data-posY="482" alt=""> 
+    <img class="elementos drags4" id="drag28" data-lugar="28" src="../img/pagina03/drag28.png" data-posX="735" data-posY="458" alt=""> 
+
+    
+    <img class="elementos" id="boton" src="../img/pagina03/boton.png" data-posX="817" data-posY="176" alt="">
+    <img class="elementos" id="pop" src="../img/pagina03/pop.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="cerrar" src="../img/pagina03/cerrar.png" data-posX="847" data-posY="176" alt="">
+
+    <img class="elementos palomas" id="paloma1" src="../img/pagina03/paloma.png" data-posX="257" data-posY="270" alt="">
+    <img class="elementos palomas" id="paloma2" src="../img/pagina03/paloma.png" data-posX="573" data-posY="270" alt="">
+    <img class="elementos palomas" id="paloma3" src="../img/pagina03/paloma.png" data-posX="257" data-posY="293" alt="">
+    <img class="elementos palomas" id="paloma4" src="../img/pagina03/paloma.png" data-posX="415" data-posY="293" alt="">
+    <img class="elementos palomas" id="paloma5" src="../img/pagina03/paloma.png" data-posX="415" data-posY="332" alt="">
+    <img class="elementos palomas" id="paloma6" src="../img/pagina03/paloma.png" data-posX="573" data-posY="332" alt="">
+    <img class="elementos palomas" id="paloma7" src="../img/pagina03/paloma.png" data-posX="415" data-posY="429" alt="">
+    <img class="elementos palomas" id="paloma8" src="../img/pagina03/paloma.png" data-posX="573" data-posY="429" alt="">
+    <img class="elementos palomas" id="paloma9" src="../img/pagina03/paloma.png" data-posX="233" data-posY="453" alt="">
+    <img class="elementos palomas" id="paloma10" src="../img/pagina03/paloma.png" data-posX="573" data-posY="453" alt="">
+    <img class="elementos palomas" id="paloma11" src="../img/pagina03/paloma.png" data-posX="415" data-posY="483" alt="">
+    <img class="elementos palomas" id="paloma12" src="../img/pagina03/paloma.png" data-posX="573" data-posY="483" alt="">
+
+    <img class="elementos palomas" id="paloma13" src="../img/pagina03/paloma.png" data-posX="271" data-posY="249" alt="">
+    <img class="elementos palomas" id="paloma14" src="../img/pagina03/paloma.png" data-posX="426" data-posY="249" alt="">
+    <img class="elementos palomas" id="paloma15" src="../img/pagina03/paloma.png" data-posX="577" data-posY="249" alt="">
+    <img class="elementos palomas" id="paloma16" src="../img/pagina03/paloma.png" data-posX="271" data-posY="278" alt="">
+    <img class="elementos palomas" id="paloma17" src="../img/pagina03/paloma.png" data-posX="426" data-posY="278" alt="">
+    <img class="elementos palomas" id="paloma18" src="../img/pagina03/paloma.png" data-posX="577" data-posY="278" alt="">
+    <img class="elementos palomas" id="paloma19" src="../img/pagina03/paloma.png" data-posX="426" data-posY="316" alt="">
+    <img class="elementos palomas" id="paloma20" src="../img/pagina03/paloma.png" data-posX="577" data-posY="316" alt="">
+
+    <img class="elementos palomas" id="paloma21" src="../img/pagina03/paloma.png" data-posX="271" data-posY="419" alt="">
+    <img class="elementos palomas" id="paloma22" src="../img/pagina03/paloma.png" data-posX="426" data-posY="419" alt="">
+    <img class="elementos palomas" id="paloma23" src="../img/pagina03/paloma.png" data-posX="577" data-posY="419" alt="">
+    <img class="elementos palomas" id="paloma24" src="../img/pagina03/paloma.png" data-posX="271" data-posY="455" alt="">
+    <img class="elementos palomas" id="paloma25" src="../img/pagina03/paloma.png" data-posX="426" data-posY="455" alt="">
+    <img class="elementos palomas" id="paloma26" src="../img/pagina03/paloma.png" data-posX="577" data-posY="455" alt="">
+    <img class="elementos palomas" id="paloma27" src="../img/pagina03/paloma.png" data-posX="426" data-posY="488" alt="">
+    <img class="elementos palomas" id="paloma28" src="../img/pagina03/paloma.png" data-posX="577" data-posY="488" alt="">
+
+    <img class="elementos taches" id="tache1" src="../img/pagina03/tache.png" data-posX="257" data-posY="270" alt="">
+    <img class="elementos taches" id="tache2" src="../img/pagina03/tache.png" data-posX="573" data-posY="270" alt="">
+    <img class="elementos taches" id="tache3" src="../img/pagina03/tache.png" data-posX="257" data-posY="293" alt="">
+    <img class="elementos taches" id="tache4" src="../img/pagina03/tache.png" data-posX="415" data-posY="293" alt="">
+    <img class="elementos taches" id="tache5" src="../img/pagina03/tache.png" data-posX="415" data-posY="332" alt="">
+    <img class="elementos taches" id="tache6" src="../img/pagina03/tache.png" data-posX="573" data-posY="332" alt="">
+    <img class="elementos taches" id="tache7" src="../img/pagina03/tache.png" data-posX="415" data-posY="429" alt="">
+    <img class="elementos taches" id="tache8" src="../img/pagina03/tache.png" data-posX="573" data-posY="429" alt="">
+    <img class="elementos taches" id="tache9" src="../img/pagina03/tache.png" data-posX="233" data-posY="453" alt="">
+    <img class="elementos taches" id="tache10" src="../img/pagina03/tache.png" data-posX="573" data-posY="453" alt="">
+    <img class="elementos taches" id="tache11" src="../img/pagina03/tache.png" data-posX="415" data-posY="483" alt="">
+    <img class="elementos taches" id="tache12" src="../img/pagina03/tache.png" data-posX="573" data-posY="483" alt="">
+
+    
+    <img class="elementos taches" id="tache13" src="../img/pagina03/tache.png" data-posX="271" data-posY="249" alt="">
+    <img class="elementos taches" id="tache14" src="../img/pagina03/tache.png" data-posX="426" data-posY="249" alt="">
+    <img class="elementos taches" id="tache15" src="../img/pagina03/tache.png" data-posX="577" data-posY="249" alt="">
+    <img class="elementos taches" id="tache16" src="../img/pagina03/tache.png" data-posX="271" data-posY="278" alt="">
+    <img class="elementos taches" id="tache17" src="../img/pagina03/tache.png" data-posX="426" data-posY="278" alt="">
+    <img class="elementos taches" id="tache18" src="../img/pagina03/tache.png" data-posX="577" data-posY="278" alt="">
+    <img class="elementos taches" id="tache19" src="../img/pagina03/tache.png" data-posX="426" data-posY="316" alt="">
+    <img class="elementos taches" id="tache20" src="../img/pagina03/tache.png" data-posX="577" data-posY="316" alt="">
+
+    <img class="elementos taches" id="tache21" src="../img/pagina03/tache.png" data-posX="271" data-posY="419" alt="">
+    <img class="elementos taches" id="tache22" src="../img/pagina03/tache.png" data-posX="426" data-posY="419" alt="">
+    <img class="elementos taches" id="tache23" src="../img/pagina03/tache.png" data-posX="577" data-posY="419" alt="">
+    <img class="elementos taches" id="tache24" src="../img/pagina03/tache.png" data-posX="271" data-posY="455" alt="">
+    <img class="elementos taches" id="tache25" src="../img/pagina03/tache.png" data-posX="426" data-posY="455" alt="">
+    <img class="elementos taches" id="tache26" src="../img/pagina03/tache.png" data-posX="577" data-posY="455" alt="">
+    <img class="elementos taches" id="tache27" src="../img/pagina03/tache.png" data-posX="426" data-posY="488" alt="">
+    <img class="elementos taches" id="tache28" src="../img/pagina03/tache.png" data-posX="577" data-posY="488" alt="">
+    
+    <img class="elementos" id="verificar1" src="../img/pagina03/verificar.png" data-posX="461" data-posY="184" alt="">
+    <img class="elementos" id="verificar2" src="../img/pagina03/verificar.png" data-posX="461" data-posY="184" alt="">
+
+    <img class="elementos" id="retroBuena" src="../img/pagina03/retroBuena.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="retroMala" src="../img/pagina03/retroMala.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="retroFinal" src="../img/pagina03/retroFinal.png" data-posX="0" data-posY="0" alt="">
+
+    <p class="elementos" id="promedio"></p>
+
+    <img class="elementos" id="reiniciar" src="../img/pagina03/reiniciar.png" data-posX="500" data-posY="440" alt="">
+    <img class="elementos" id="reintentar" src="../img/pagina03/reintentar.png" data-posX="500" data-posY="440" alt="">
+
+
+    <!-- Script de la página -->
+    <script>
+
+        // Variable----------------------------------------------------
+        let aplicacion = parent;
+        const texto = $('#texto');
+        const boton = $('#boton');
+        const pop = $('#pop');
+        const cerrar = $('#cerrar');
+        const verificar1 = $('#verificar1');
+        const verificar2 = $('#verificar2');
+        
+        const palomas = $('.palomas');
+        const taches = $('.taches');
+
+        const paloma1 = $('#paloma1');
+        const paloma2 = $('#paloma2');
+        const paloma3 = $('#paloma3');
+        const paloma4 = $('#paloma4');
+        const paloma5 = $('#paloma5');
+        const paloma6 = $('#paloma6');
+        const paloma7 = $('#paloma7');
+        const paloma8 = $('#paloma8');
+        const paloma9 = $('#paloma9');
+        const paloma10 = $('#paloma10');
+        const paloma11 = $('#paloma11');
+        const paloma12 = $('#paloma12');
+        const paloma13 = $('#paloma13');
+        const paloma14 = $('#paloma14');
+        const paloma15 = $('#paloma15');
+        const paloma16 = $('#paloma16');
+        const paloma17 = $('#paloma17');
+        const paloma18 = $('#paloma18');
+        const paloma19 = $('#paloma19');
+        const paloma20 = $('#paloma20');
+        const paloma21 = $('#paloma21');
+        const paloma22 = $('#paloma22');
+        const paloma23 = $('#paloma23');
+        const paloma24 = $('#paloma24');
+        const paloma25 = $('#paloma25');
+        const paloma26 = $('#paloma26');
+        const paloma27 = $('#paloma27');
+        const paloma28 = $('#paloma28');
+
+        const tache1 = $('#tache1');
+        const tache2 = $('#tache2');
+        const tache3 = $('#tache3');
+        const tache4 = $('#tache4');
+        const tache5 = $('#tache5');
+        const tache6 = $('#tache6');
+        const tache7 = $('#tache7');
+        const tache8 = $('#tache8');
+        const tache9 = $('#tache9');
+        const tache10 = $('#tache10');
+        const tache11 = $('#tache11');
+        const tache12 = $('#tache12');
+        const tache13 = $('#tache13');
+        const tache14 = $('#tache14');
+        const tache15 = $('#tache15');
+        const tache16 = $('#tache16');
+        const tache17 = $('#tache17');
+        const tache18 = $('#tache18');
+        const tache19 = $('#tache19');
+        const tache20 = $('#tache20');
+        const tache21 = $('#tache21');
+        const tache22 = $('#tache22');
+        const tache23 = $('#tache23');
+        const tache24 = $('#tache24');
+        const tache25 = $('#tache25');
+        const tache26 = $('#tache26');
+        const tache27 = $('#tache27');
+        const tache28 = $('#tache28');
+
+        const fondoA = $('#fondoA');
+        const fondoB = $('#fondoB');
+
+        const drag1 = $('#drag1');
+        const drag2 = $('#drag2');
+        const drag3 = $('#drag3');
+        const drag4 = $('#drag4');
+        const drag5 = $('#drag5');
+        const drag6 = $('#drag6');
+
+        const drag7 = $('#drag7');
+        const drag8 = $('#drag8');
+        const drag9 = $('#drag9');
+        const drag10 = $('#drag10');
+        const drag11 = $('#drag11');
+        const drag12 = $('#drag12');
+        
+        const drag13 = $('#drag13');
+        const drag14 = $('#drag14');
+        const drag15 = $('#drag15');
+        const drag16 = $('#drag16');
+        const drag17 = $('#drag17');
+        const drag18 = $('#drag18');
+        const drag19 = $('#drag19');
+        const drag20 = $('#drag20');
+        
+        const drag21 = $('#drag21');
+        const drag22 = $('#drag22');
+        const drag23 = $('#drag23');
+        const drag24 = $('#drag24');
+        const drag25 = $('#drag25');
+        const drag26 = $('#drag26');
+        const drag27 = $('#drag27');
+        const drag28 = $('#drag28');
+
+        const drags1 = $('.drags1');
+        const drags2 = $('.drags2');
+        const drags3 = $('.drags3');
+        const drags4 = $('.drags4');
+
+        const drops1 = $('.drops1');
+        const drops2 = $('.drops2');
+        const drops3 = $('.drops3');
+        const drops4 = $('.drops4');
+
+        boton.css('cursor', 'pointer');
+        cerrar.css('cursor', 'pointer');
+
+        const retroBuena = $('#retroBuena');
+        const retroMala = $('#retroMala');
+        const retroFinal = $('#retroFinal');
+
+        const promedio = $('#promedio');
+
+        const reiniciar = $('#reiniciar');
+        const reintentar = $('#reintentar');
+
+        let dragSelect;
+        let dropSelect;
+
+        let colocados = 0;
+        let aciertos = 0;
+
+        // Audios------------------------------------------------------
+        const audio = [
+            new Audio('../audios/Patria_EjerciciosProporcional_03_01.mp3'),
+            new Audio('../audios/Patria_EjerciciosProporcional_03_02.mp3'),
+            new Audio('../audios/Patria_EjerciciosProporcional_03_03.mp3'),
+            new Audio('../audios/Patria_EjerciciosProporcional_03_04.mp3'),
+        ]
+
+        const audiosPT = [
+            new Audio('../audios/s_bien.mp3'),
+            new Audio('../audios/s_mal.mp3'),
+        ]
+
+        // Al cargarse la página
+        $(window).on("load", function(){
+            redimensionarElementos();
+            aplicacion.cargando(iniciarContenido);
+        });
+
+        function iniciarContenido(){
+            aplicacion.reproducirAudio(audio[0], locutarAudio1, 1);
+            animacionEntrada(texto, 'default', 1, 1);
+            animacionEntrada(fondoA, 'default', 1, 1);
+        }
+
+        function locutarAudio1(){
+            aplicacion.reproducirAudio(audio[1], entradaActividad, 1);
+        }
+
+        function entradaActividad() {
+            animacionEntrada(drags1, 'default', 1, 1);
+            animacionEntrada(drags2, 'default', 1, 1);
+            animacionEntrada(drops1, 'default', 1, 1);
+            animacionEntrada(drops2, 'default', 1, 1);
+            animacionEntrada(boton, 'default', 1, 1);
+
+            setTimeout(()=>{
+                completarDatos1();
+                completarDatos2();
+                drags1.css('cursor', 'grab');
+                drags2.css('cursor', 'grab');
+            }, 2000);
+        }
+
+        boton.click(function(){
+            if(boton.css('cursor') == 'pointer'){
+                animacionEntrada(pop, 'default', 1, 1);
+                animacionEntrada(cerrar, 'default', 1, 1);
+            }
+        });
+
+        cerrar.click(function(){
+            if(cerrar.css('cursor') == 'pointer'){
+                animacionSalida(pop, 'default', 1, 1);
+                animacionSalida(cerrar, 'default', 1, 1);
+            }
+        });
+
+        function completarDatos1(){
+
+            drags1.draggable({
+                revert: true,
+                start: function( event, ui ) {
+                    dragSelect = $(this).data('lugar');
+                }
+            });
+
+            drops1.droppable({
+                accept: drags1,
+                tolerance: "intersect",
+                drop: function( event, ui ) {
+                    dropSelect = $(this).data('lugar');
+                    soltar1();
+                }
+            });
+        }
+
+        function completarDatos2(){
+
+            drags2.draggable({
+                revert: true,
+                start: function( event, ui ) {
+                    dragSelect = $(this).data('lugar');
+                }
+            });
+
+            drops2.droppable({
+                accept: drags2,
+                tolerance: "intersect",
+                drop: function( event, ui ) {
+                    dropSelect = $(this).data('lugar');
+                    soltar1();
+                }
+            });
+        }
+
+        function soltar1(){
+            // Selecionar los elementos correspondiente
+            const dragActivo = $(`#drag${dragSelect}`);
+            const dropActivo = $(`#drop${dropSelect}`);
+
+            //Sacar el top y el left del drop 
+            const dropTop = dropActivo.css('top');
+            const dropLeft = dropActivo.css('left');
+
+            //Posicionar el drag en el drop
+            dragActivo.css({
+                'top': `${Number(dropTop.split('px')[0]) + 5}px`,
+                'left': `${Number(dropLeft.split('px')[0]) + 18}px`
+            });
+
+            //Deshabilitar el regreso
+            dragActivo.draggable({
+                revert: false,
+            });
+            // dragActivo.draggable("disable");
+
+            dragActivo.css({
+                cursor: 'default'
+            });
+
+            //Comparar si es el lugar correspondiente
+            if(dragSelect == dropSelect){
+                //Evaluar si el lugar tiene un elemento colocado
+                if(!dragActivo.hasClass('colocado')){
+                    dragActivo.addClass('colocado');
+                    colocados++;
+                }
+                
+                dragActivo.addClass('correcto');
+                aciertos++;
+                // console.log(`Colocados: ${colocados}`);
+                // console.log(`Aciertos: ${aciertos}`);
+            }
+            else{
+                //Evaluar si el lugar tiene un elemento colocado
+                if(!dragActivo.hasClass('colocado')){
+                    dragActivo.addClass('colocado');
+                    colocados++;
+                    // console.log(`Colocados: ${colocados}`);
+                }
+                else if(dragActivo.hasClass('correcto')){
+                    dragActivo.removeClass('correcto');
+                    aciertos--;
+                    // console.log(`Aciertos: ${aciertos}`);
+                }
+            }
+
+            if(colocados == 12){
+                parpadear(verificar1);
+            }
+        }
+        
+        verificar1.click(function(){
+            if(verificar1.css('cursor') == 'pointer'){
+
+                dejarParpadear(verificar1);
+
+                if(drag1.hasClass('correcto')){
+                    animacionEntrada(paloma1, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache1, 'default', 1);
+                }
+
+                if(drag2.hasClass('correcto')){
+                    animacionEntrada(paloma2, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache2, 'default', 1);
+                }
+
+                if(drag3.hasClass('correcto')){
+                    animacionEntrada(paloma3, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache3, 'default', 1);
+                }
+
+                if(drag4.hasClass('correcto')){
+                    animacionEntrada(paloma4, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache4, 'default', 1);
+                }
+
+                if(drag5.hasClass('correcto')){
+                    animacionEntrada(paloma5, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache5, 'default', 1);
+                }
+
+                if(drag6.hasClass('correcto')){
+                    animacionEntrada(paloma6, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache6, 'default', 1);
+                }
+
+                if(drag7.hasClass('correcto')){
+                    animacionEntrada(paloma7, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache7, 'default', 1);
+                }
+
+                if(drag8.hasClass('correcto')){
+                    animacionEntrada(paloma8, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache8, 'default', 1);
+                }
+
+                if(drag9.hasClass('correcto')){
+                    animacionEntrada(paloma9, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache9, 'default', 1);
+                }
+
+                if(drag10.hasClass('correcto')){
+                    animacionEntrada(paloma10, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache10, 'default', 1);
+                }
+
+                if(drag11.hasClass('correcto')){
+                    animacionEntrada(paloma11, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache11, 'default', 1);
+                }
+
+                if(drag12.hasClass('correcto')){
+                    animacionEntrada(paloma12, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache12, 'default', 1);
+                }
+
+                setTimeout(()=>{
+                    entradaActividad2();
+                }, 3000);
+            }
+        });
+
+        function entradaActividad2() {  
+            animacionSalida(verificar1, 'default', 1, 1);
+            animacionSalida(taches, 'default', 1, 1);
+            animacionSalida(palomas, 'default', 1, 1);
+            animacionSalida(drags1, 'default', 1, 1);
+            animacionSalida(drags2, 'default', 1, 1);
+            animacionSalida(drops1, 'default', 1, 1);
+            animacionSalida(drops2, 'default', 1, 1);
+            animacionSalida(fondoA, 'default', 1, 1);
+            animacionEntrada(fondoB, 'default', 1, 2);
+            
+            locutarAudio2();
+        }
+
+        function locutarAudio2() {  
+            aplicacion.reproducirAudio(audio[2], locutarAudio3, 1);
+        }
+
+        function locutarAudio3() {  
+            aplicacion.reproducirAudio(audio[3], entradaDrags, 1);
+        }
+
+        function entradaDrags(){
+            animacionEntrada(drags3, 'default', 1);
+            animacionEntrada(drags4, 'default', 1);
+            animacionEntrada(drops3, 'default', 1);
+            animacionEntrada(drops4, 'default', 1);
+
+            setTimeout(()=>{
+                completarDatos3();
+                completarDatos4();
+                drags3.css('cursor', 'grab');
+                drags4.css('cursor', 'grab');
+            }, 2000);
+        }
+
+        function completarDatos3(){
+
+            drags3.draggable({
+                revert: true,
+                start: function( event, ui ) {
+                    dragSelect = $(this).data('lugar');
+                }
+            });
+
+            drops3.droppable({
+                accept: drags3,
+                tolerance: "intersect",
+                drop: function( event, ui ) {
+                    dropSelect = $(this).data('lugar');
+                    soltar2();
+                }
+            });
+        }
+
+        function completarDatos4(){
+
+            drags4.draggable({
+                revert: true,
+                start: function( event, ui ) {
+                    dragSelect = $(this).data('lugar');
+                }
+            });
+
+            drops4.droppable({
+                accept: drags4,
+                tolerance: "intersect",
+                drop: function( event, ui ) {
+                    dropSelect = $(this).data('lugar');
+                    soltar2();
+                }
+            });
+        }
+
+        
+
+        function soltar2(){
+            // Selecionar los elementos correspondiente
+            const dragActivo = $(`#drag${dragSelect}`);
+            const dropActivo = $(`#drop${dropSelect}`);
+
+            //Sacar el top y el left del drop 
+            const dropTop = dropActivo.css('top');
+            const dropLeft = dropActivo.css('left');
+
+            //Posicionar el drag en el drop
+            dragActivo.css({
+                'top': `${Number(dropTop.split('px')[0]) + 5}px`,
+                'left': `${Number(dropLeft.split('px')[0]) + 18}px`
+            });
+
+            //Deshabilitar el regreso
+            dragActivo.draggable({
+                revert: false,
+            });
+            // dragActivo.draggable("disable");
+
+            dragActivo.css({
+                cursor: 'default'
+            });
+
+            //Comparar si es el lugar correspondiente
+            if(dragSelect == dropSelect){
+                //Evaluar si el lugar tiene un elemento colocado
+                if(!dragActivo.hasClass('colocado')){
+                    dragActivo.addClass('colocado');
+                    colocados++;
+                }
+                
+                dragActivo.addClass('correcto');
+                aciertos++;
+                // console.log(`Colocados: ${colocados}`);
+                // console.log(`Aciertos: ${aciertos}`);
+            }
+            else{
+                //Evaluar si el lugar tiene un elemento colocado
+                if(!dragActivo.hasClass('colocado')){
+                    dragActivo.addClass('colocado');
+                    colocados++;
+                    // console.log(`Colocados: ${colocados}`);
+                }
+                else if(dragActivo.hasClass('correcto')){
+                    dragActivo.removeClass('correcto');
+                    aciertos--;
+                    // console.log(`Aciertos: ${aciertos}`);
+                }
+            }
+
+            if(colocados == 28){
+                parpadear(verificar2);
+            }
+        }
+
+        
+        verificar2.click(function(){
+            if(verificar2.css('cursor') == 'pointer'){
+
+                dejarParpadear(verificar2);
+
+                if(drag13.hasClass('correcto')){
+                    animacionEntrada(paloma13, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache13, 'default', 1);
+                }
+
+                if(drag14.hasClass('correcto')){
+                    animacionEntrada(paloma14, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache14, 'default', 1);
+                }
+
+                if(drag15.hasClass('correcto')){
+                    animacionEntrada(paloma15, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache15, 'default', 1);
+                }
+
+                if(drag16.hasClass('correcto')){
+                    animacionEntrada(paloma16, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache16, 'default', 1);
+                }
+
+                if(drag17.hasClass('correcto')){
+                    animacionEntrada(paloma17, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache17, 'default', 1);
+                }
+
+                if(drag18.hasClass('correcto')){
+                    animacionEntrada(paloma18, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache18, 'default', 1);
+                }
+
+                if(drag19.hasClass('correcto')){
+                    animacionEntrada(paloma19, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache19, 'default', 1);
+                }
+
+                if(drag20.hasClass('correcto')){
+                    animacionEntrada(paloma20, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache20, 'default', 1);
+                }
+
+                if(drag21.hasClass('correcto')){
+                    animacionEntrada(paloma21, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache21, 'default', 1);
+                }
+
+                if(drag22.hasClass('correcto')){
+                    animacionEntrada(paloma22, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache22, 'default', 1);
+                }
+
+                if(drag23.hasClass('correcto')){
+                    animacionEntrada(paloma23, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache23, 'default', 1);
+                }
+
+                if(drag24.hasClass('correcto')){
+                    animacionEntrada(paloma24, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache24, 'default', 1);
+                }
+
+                if(drag25.hasClass('correcto')){
+                    animacionEntrada(paloma25, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache25, 'default', 1);
+                }
+
+                if(drag26.hasClass('correcto')){
+                    animacionEntrada(paloma26, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache26, 'default', 1);
+                }
+
+                if(drag27.hasClass('correcto')){
+                    animacionEntrada(paloma27, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache27, 'default', 1);
+                }
+
+                if(drag28.hasClass('correcto')){
+                    animacionEntrada(paloma28, 'default', 1);
+                }
+                else{
+                    animacionEntrada(tache28, 'default', 1);
+                }
+
+                setTimeout(()=>{
+                    animacionSalida(verificar2, 'default', 1);
+                    animacionSalida(boton, 'default', 1);
+                    animacionSalida(taches, 'default', 1);
+                    animacionSalida(palomas, 'default', 1);
+                    animacionSalida(drags3, 'default', 1);
+                    animacionSalida(drags4, 'default', 1);
+                    animacionSalida(drops3, 'default', 1);
+                    animacionSalida(drops4, 'default', 1);
+                    animacionSalida(fondoB, 'default', 1);
+
+                    evaluar();
+                }, 3000);
+            }
+        });
+
+        // Evaluacion-------------------------------------------------
+        function evaluar() {
+            
+            const calificacion = Math.round((aciertos * 28) / 100);
+
+            const intento = aplicacion.verIntento();
+
+            if(calificacion >= 80 && intento <= 2){
+                bien(calificacion);
+            }
+            else if(calificacion < 80 && intento == 1){
+                aplicacion.siguienteIntento();
+                mal(calificacion);
+            }
+            else{
+                aplicacion.siguienteIntento();
+                final(calificacion);
+            } 
+
+            let aciertosTotales = aplicacion.aciertosTotales();
+            aciertosTotales = aciertosTotales +calificacion;// si funciona
+            aplicacion.actualizarAciertostotales(aciertosTotales);
+            console.log("sumatoria..2 " + aciertosTotales);
+            // aplicacion.guardarCalificacion(calificacion);
+        }
+
+        function bien(calificacion) {
+
+            promedio.html(calificacion);
+
+            promedio.css({
+                'left': '510px',
+                'top': '320px',
+                'color': 'white',
+                'fontSize': '32px'
+            });
+
+            finalPagina();
+            animacionEntrada(retroBuena, 'default', 1, 1);
+            animacionEntrada(promedio, 'default', 1, 1);
+        }
+
+        function mal(calificacion) {
+
+            promedio.html(calificacion);
+
+            promedio.css({
+                'left': '507px',
+                'top': '250px',
+                'color': 'white',
+                'fontSize': '32px'
+            });
+
+            volverIntentar();
+            animacionEntrada(retroMala, 'default', 1, 1);
+            animacionEntrada(promedio, 'default', 1, 1); 
+        }
+
+        function final(calificacion) {
+
+            promedio.html(calificacion);
+
+            promedio.css({
+                'left': '507px',
+                'top': '200px',
+                'color': 'white',
+                'fontSize': '32px'
+            });
+
+            volverCurso(); 
+            animacionEntrada(retroFinal, 'default', 1, 1);
+            animacionEntrada(promedio, 'default', 1, 1); 
+        }
+
+        function volverIntentar() {
+            parpadear(reintentar);
+        }
+
+        function volverCurso() {
+            parpadear(reiniciar);
+        }
+
+        reintentar.click(function(){
+            aplicacion.recargarPagina();
+        });
+
+        reiniciar.click(function(){
+            aplicacion.irPagina(2);
+        });
+
+        function finalPagina(){
+            aplicacion.terminaPantalla();
+        }
+
+    </script>
+</body>
+</html>
