@@ -176,11 +176,11 @@
         // const respuesta1 = "116";
         const respuesta1 = ["116","116.00"]
         const respuesta2 = ["650","650.00"]
-        const respuesta3 = ["1,750","1750"]
-        const respuesta4 = ["3,330","3330"]
-        const respuesta5 = ["5,001","5001"]
+        const respuesta3 = ["1,750","1750", "1,750.00", "1750.00"]
+        const respuesta4 = ["3,330","3330", "3,330.00", "3330.00"]
+        const respuesta5 = ["5,001","5001", "5,001.00", "5001.00"]
         // const respuesta6 = ["1,000.00","1000" ]
-        const respuesta7 = ["2,530" ,"2530"]
+        const respuesta7 = ["2,530","2530", "2,530.00" ,"2530.00"]
         const respuesta8 = ["589.81",""]
         const respuesta9 = ["393.74",""]
         const respuesta10 = ["167.20",""]
@@ -191,9 +191,6 @@
         const respuesta15 = ["285.19",""]
         const respuesta16 = ["760.80",""]
         const respuesta17 = ["542.69",""]
-    
-        let aciertosTotales = aplicacion.aciertosTotales();
-        console.log(aciertosTotales)
         
         // Audios------------------------------------------------------
         const audio = [
@@ -349,15 +346,15 @@ verificar.click(function(){
                     animacionEntrada(palomita2, 'default', 1, 0);
                     aciertos++                    
                 }else{animacionEntrada(tache2, 'default', 1, 0);}
-                if(valorObtenido3 == respuesta3[0] || valorObtenido3 == respuesta3[1]){
+                if(valorObtenido3 == respuesta3[0] || valorObtenido3 == respuesta3[1] || valorObtenido3 == respuesta3[2]  || valorObtenido3 == respuesta3[3]){
                     animacionEntrada(palomita3, 'default', 1, 0);
                     aciertos++                    
                 }else{animacionEntrada(tache3, 'default', 1, 0);}
-                if(valorObtenido4 == respuesta4[0] || valorObtenido4 == respuesta4[1]){
+                if(valorObtenido4 == respuesta4[0] || valorObtenido4 == respuesta4[1] || valorObtenido4 == respuesta4[2] || valorObtenido4 == respuesta4[3]){
                     animacionEntrada(palomita4, 'default', 1, 0);
                     aciertos++                    
                 }else{animacionEntrada(tache4, 'default', 1, 0);}
-                if(valorObtenido5 == respuesta5[0] || valorObtenido5 == respuesta5[1]){
+                if(valorObtenido5 == respuesta5[0] || valorObtenido5 == respuesta5[1] || valorObtenido5 == respuesta5[2] || valorObtenido5 == respuesta5[3]){
                     animacionEntrada(palomita5, 'default', 1, 0);
                     aciertos++                    
                 }else{animacionEntrada(tache5, 'default', 1, 0);}
@@ -365,7 +362,7 @@ verificar.click(function(){
                 //     //animacionEntrada(palomita6, 'default', 1, 0);
                 //     aciertos++                    
                 // }else{animacionEntrada(tache6, 'default', 1, 0);}
-                if(valorObtenido7 == respuesta7[0] || valorObtenido7 == respuesta7[1]){
+                if(valorObtenido7 == respuesta7[0] || valorObtenido7 == respuesta7[1] || valorObtenido7 == respuesta7[2] || valorObtenido7 == respuesta7[3]){
                    animacionEntrada(palomita7, 'default', 1, 0);
                    aciertos++                    
                }else{animacionEntrada(tache7, 'default', 1, 0);}

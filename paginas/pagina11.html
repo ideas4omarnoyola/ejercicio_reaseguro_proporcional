@@ -140,6 +140,26 @@
         let puntobtn5= false;
         let puntobtn6= false;
 
+        let clickV1 = false;
+        let clickV2 = false;
+        let clickV3 = false;
+        let clickV4 = false;
+        let clickV5 = false;
+        let clickV6 = false;
+        let clickF1 = false;
+        let clickF2 = false;
+        let clickF3 = false;
+        let clickF4 = false;
+        let clickF5 = false;
+        let clickF6 = false;
+
+        let preguntaM1 = false;
+        let preguntaM2 = false;
+        let preguntaM3 = false;
+        let preguntaM4 = false;
+        let preguntaM5 = false;
+        let preguntaM6 = false;
+
         const verificar = $('#verificar');
         const positiva = $('#retroPositiva');
         const negativa = $('#retroNegativa');
@@ -235,15 +255,24 @@
            
              //camposllenos();
          }
+        
         verdadero1.click(function(){
             if(verdadero1.css('cursor') == 'pointer'){
-               verdadero1.css({'cursor': 'default','opacity': .5});
-               aciertos++ 
-               marcadas++
-               puntobtn1=true;
-               falso1.css({'cursor': 'default'});
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               if(marcadas == 6){
+                verdadero1.css({'opacity': .5});
+                falso1.css({'opacity': 1});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                if(!clickV1){
+                    
+                    clickV1 = true;
+                    clickF1 = false;
+                    puntobtn1=true; 
+                    aciertos++;
+                }
+                preguntaM1 = true;
+
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
                 }
             }
@@ -251,22 +280,49 @@
 
         falso1.click(function(){
             if(falso1.css('cursor') == 'pointer'){
-               falso1.css({'cursor': 'default','opacity': .5});
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               verdadero1.css({'cursor': 'default'});
-               marcadas++
-               if(marcadas == 6){
+                verdadero1.css({'opacity': 1});
+                falso1.css({'opacity': .5});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                if(clickV1){
+                    aciertos--;
+                }
+
+                if(!clickF1){
+                    
+                    clickF1 = true;
+                    clickV1 = false;
+                    puntobtn1=false; 
+                }
+                preguntaM1 = true;
+
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
                 }
             }
         });
          verdadero2.click(function(){
             if(verdadero2.css('cursor') == 'pointer'){
-               verdadero2.css({'cursor': 'default','opacity': .5});               
-               falso2.css({'cursor': 'default'});
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               marcadas++
-               if(marcadas == 6){
+                verdadero2.css({'opacity': .5});
+                falso2.css({'opacity': 1});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                
+                if(!clickF2){
+                    
+                    clickF2 = true;
+                    clickV2 = false;
+                    puntobtn2=false; 
+
+                    animacionSalida(campo1, 'default', 1, 1);
+                    animacionSalida(campo4, 'default', 1, 1);
+                    animacionSalida(diagonal1, 'default', 1, 1);
+                }
+                preguntaM2 = true;
+
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
                 }
             }
@@ -274,51 +330,90 @@
 
         falso2.click(function(){
             if(falso2.css('cursor') == 'pointer'){
-               falso2.css({'cursor': 'default','opacity': .5});              
-               verdadero2.css({'cursor': 'default'});
-               animacionEntrada(campo1, 'default', 1, 1);
-               animacionEntrada(diagonal1, 'default', 1, 1);
-               animacionEntrada(campo4, 'default', 1, 1);
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               marcadas++          
+               
+                verdadero2.css({'opacity': 1});
+                falso2.css({'opacity': .5});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                if(!clickV2){
+                    
+                    clickV2 = true;
+                    clickF2 = false;
+                    puntobtn2=true;
+                    
+                    animacionEntrada(campo1, 'default', 1, 1);
+                    animacionEntrada(campo4, 'default', 1, 1);
+                    animacionEntrada(diagonal1, 'default', 1, 1);
+                }
+                preguntaM2 = false; 
+            
+                
           }
         });
 
         verdadero3.click(function(){
             if(verdadero3.css('cursor') == 'pointer'){
-               verdadero3.css({'cursor': 'default','opacity': .5});
-               aciertos++ 
-               puntobtn3=true;
-               falso3.css({'cursor': 'default'});
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               marcadas++
-               if(marcadas == 6){
+                verdadero3.css({'opacity': .5});
+                falso3.css({'opacity': 1});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                if(!clickV3){
+                    
+                    clickV3 = true;
+                    clickF3 = false;
+                    puntobtn3=true; 
+                    aciertos++;
+                }
+                preguntaM3 = true;
+
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
                 }
             }
         });
 
         falso3.click(function(){
-            if(falso3.css('cursor') == 'pointer'){
-               falso3.css({'cursor': 'default','opacity': .5});               
-               verdadero3.css({'cursor': 'default'});
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               marcadas++
-               if(marcadas == 6){
+            verdadero3.css({'opacity': 1});
+                falso3.css({'opacity': .5});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                if(clickV3){
+                    aciertos--;
+                }
+
+                if(!clickF3){
+                    
+                    clickF3 = true;
+                    clickV3 = false;
+                    puntobtn3=false; 
+                }
+                preguntaM3 = true;
+
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
                 }
-            }
         });
 
         verdadero4.click(function(){
             if(verdadero4.css('cursor') == 'pointer'){
-               verdadero4.css({'cursor': 'default','opacity': .5});               
-               falso4.css({'cursor': 'default'});
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               aciertos++ 
-               puntobtn4=true;
-               marcadas++
-               if(marcadas == 6){
+                verdadero4.css({'opacity': .5});
+                falso4.css({'opacity': 1});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                if(!clickV4){
+                    
+                    clickV4 = true;
+                    clickF4 = false;
+                    puntobtn4=true; 
+                    aciertos++;
+                }
+                preguntaM4 = true;
+
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
                 }
             }
@@ -326,11 +421,24 @@
 
         falso4.click(function(){
             if(falso4.css('cursor') == 'pointer'){
-               falso4.css({'cursor': 'default','opacity': .5});               
-               verdadero4.css({'cursor': 'default'});
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               marcadas++
-               if(marcadas == 6){
+                verdadero4.css({'opacity': 1});
+                falso4.css({'opacity': .5});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                if(clickV4){
+                    aciertos--;
+                }
+
+                if(!clickF4){
+                    
+                    clickF4 = true;
+                    clickV4 = false;
+                    puntobtn4=false; 
+                }
+                preguntaM4 = true;
+
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
                 }
             }
@@ -338,11 +446,25 @@
 
         verdadero5.click(function(){
             if(verdadero5.css('cursor') == 'pointer'){
-               verdadero5.css({'cursor': 'default','opacity': .5});               
-               falso5.css({'cursor': 'default'}); 
-               aplicacion.reproducirAudio(audio[5], 0, 0);             
-               marcadas++
-               if(marcadas == 6){
+                verdadero5.css({'opacity': .5});
+                falso5.css({'opacity': 1});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                
+                if(!clickF5){
+                    
+                    clickF5 = true;
+                    clickV5 = false;
+                    puntobtn5=false; 
+
+                    animacionSalida(campo2, 'default', 1, 1);
+                    animacionSalida(campo5, 'default', 1, 1);
+                    animacionSalida(diagonal2, 'default', 1, 1);
+                }
+                preguntaM5 = true;
+
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
                 }
             }
@@ -350,55 +472,115 @@
 
         falso5.click(function(){
             if(falso5.css('cursor') == 'pointer'){
-               falso5.css({'cursor': 'default','opacity': .5});               
-               verdadero5.css({'cursor': 'default'});
-               animacionEntrada(campo2, 'default', 1, 1);
-               animacionEntrada(diagonal2, 'default', 1, 1);
-               animacionEntrada(campo5, 'default', 1, 1);
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               marcadas++
+                verdadero5.css({'opacity': 1});
+                falso5.css({'opacity': .5});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                if(!clickV5){
+                    
+                    clickV5 = true;
+                    clickF5 = false;
+                    puntobtn5=true;
+                    
+                    animacionEntrada(campo2, 'default', 1, 1);
+                    animacionEntrada(campo5, 'default', 1, 1);
+                    animacionEntrada(diagonal2, 'default', 1, 1);
+                }
+                preguntaM5 = false; 
             }
         });
 
          verdadero6.click(function(){
             if(verdadero6.css('cursor') == 'pointer'){
-               verdadero6.css({'cursor': 'default','opacity': .5});               
-               falso6.css({'cursor': 'default'});  
-               aplicacion.reproducirAudio(audio[5], 0, 0);     
-               marcadas++
-               if(marcadas == 6){
+                verdadero6.css({'opacity': .5});
+                falso6.css({'opacity': 1});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                
+                if(!clickF6){
+                    
+                    clickF6 = true;
+                    clickV6 = false;
+                    puntobtn6=false; 
+
+                    animacionSalida(campo3, 'default', 1, 1);
+                    animacionSalida(campo6, 'default', 1, 1);
+                    animacionSalida(diagonal3, 'default', 1, 1);
+                }
+                preguntaM6 = true;
+                
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
-                }       
+                }
             }
         });
 
         falso6.click(function(){
             if(falso6.css('cursor') == 'pointer'){
-               falso6.css({'cursor': 'default','opacity': .5});               
-               verdadero6.css({'cursor': 'default'});
-               animacionEntrada(campo3, 'default', 1, 1);
-               animacionEntrada(diagonal3, 'default', 1, 1);
-               animacionEntrada(campo6, 'default', 1, 1);
-               aplicacion.reproducirAudio(audio[5], 0, 0);
-               marcadas++
+                verdadero6.css({'opacity': 1});
+                falso6.css({'opacity': .5});
+
+                aplicacion.reproducirAudio(audio[5], 0, 0);
+
+                if(!clickV6){
+                    
+                    clickV6 = true;
+                    clickF6 = false;
+                    puntobtn6=true;
+                    
+                    animacionEntrada(campo3, 'default', 1, 1);
+                    animacionEntrada(campo6, 'default', 1, 1);
+                    animacionEntrada(diagonal3, 'default', 1, 1);
+                }
+                preguntaM6 = false; 
             }
         });
 
         campos.each(function(){
             $(this).on('input', function(){
 
-                const inputs = [
+                const inputs1 = [
                     campo1.val(),
-                    campo2.val(),
-                    campo3.val(),
-                    campo4.val(),
-                    campo5.val(),
-                    campo6.val()
-                ]
+                    campo4.val()
+                ];
                 
-                if(!inputs.includes('') && marcadas == 6){
+                const inputs2 = [
+                    campo2.val(),
+                    campo5.val()
+                ];
+                
+                const inputs3 = [
+                    campo3.val(),
+                    campo6.val()
+                ];
+
+                if(!preguntaM2){
+
+                    if(!inputs1.includes('')){
+                        preguntaM2 = true;
+                    }
+                }
+
+                if(!preguntaM5){
+
+                    if(!inputs2.includes('')){
+                        preguntaM5 = true;
+                    }
+                }
+
+                if(!preguntaM6){
+
+                    if(!inputs3.includes('')){
+                        preguntaM6 = true;
+                    }
+                }
+
+                if(preguntaM1 && preguntaM2 && preguntaM3 && preguntaM4 && preguntaM5 && preguntaM6){
                     parpadear(verificar);
                 }
+                
             });
         });
 

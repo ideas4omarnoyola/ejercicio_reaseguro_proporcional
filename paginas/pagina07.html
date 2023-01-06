@@ -523,10 +523,15 @@
                     
                 }
                 
-                dragActivo.addClass('correcto');
-               palomitas[dragSelect-1].addClass('correcto');
-               taches[dragSelect-1].removeClass('incorrecto');
-                aciertos++;
+                
+
+                if(!dragActivo.hasClass('correcto')){
+                    dragActivo.addClass('correcto');
+                    palomitas[dragSelect-1].addClass('correcto');
+                    taches[dragSelect-1].removeClass('incorrecto');
+                    aciertos++;
+                }
+
                 console.log(`Colocados: ${colocados}`);
                 console.log(`Aciertos: ${aciertos}`);
 
@@ -540,7 +545,7 @@
                 }
                 else if(dragActivo.hasClass('correcto')){
                     dragActivo.removeClass('correcto');
-                   palomitas[dragSelect-1].removeClass('correcto');                                                       
+                    palomitas[dragSelect-1].removeClass('correcto');                                                       
                     aciertos--;
                     console.log(`Aciertos: ${aciertos}`);
                 }
@@ -1037,7 +1042,7 @@
                 'top': '250px',
                 'left': '510px'
             });
-            aplicacion.reproducirAudio(audio[1], terminaAudio1, 1);
+            terminaAudio1();
             animacionEntrada(negativa, 'default', 1, 2);
             animacionEntrada(promedio, 'default', 1, 2);
 
@@ -1060,7 +1065,7 @@
                 'top': '220px',
                 'left': '520px'
             });
-            aplicacion.reproducirAudio(audio[2], terminaAudio2, 1);
+            terminaAudio1();
             animacionEntrada(final, 'default', 1, 2);
             animacionEntrada(promedio, 'default', 1, 2);
 

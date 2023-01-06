@@ -439,8 +439,12 @@
                     colocados++;
                 }
                 
-                dragActivo.addClass('correcto');
-                aciertos++;
+                
+                if(!dragActivo.hasClass('correcto')){
+                    dragActivo.addClass('correcto');
+                    aciertos++;
+                }
+                
                 // console.log(`Colocados: ${colocados}`);
                 // console.log(`Aciertos: ${aciertos}`);
             }
@@ -667,8 +671,10 @@
                     colocados++;
                 }
                 
-                dragActivo.addClass('correcto');
-                aciertos++;
+                if(!dragActivo.hasClass('correcto')){
+                    dragActivo.addClass('correcto');
+                    aciertos++;
+                }
                 // console.log(`Colocados: ${colocados}`);
                 // console.log(`Aciertos: ${aciertos}`);
             }
@@ -828,7 +834,7 @@
         // Evaluacion-------------------------------------------------
         function evaluar() {
             
-            const calificacion = Math.round((aciertos * 28) / 100);
+            const calificacion = Math.round((aciertos * 100) / 28);
 
             const intento = aplicacion.verIntento();
 
@@ -878,7 +884,7 @@
                 'fontSize': '32px'
             });
 
-            volverIntentar();
+            finalPagina();
             animacionEntrada(retroMala, 'default', 1, 1);
             animacionEntrada(promedio, 'default', 1, 1); 
         }
@@ -894,7 +900,7 @@
                 'fontSize': '32px'
             });
 
-            volverCurso(); 
+            finalPagina();
             animacionEntrada(retroFinal, 'default', 1, 1);
             animacionEntrada(promedio, 'default', 1, 1); 
         }
