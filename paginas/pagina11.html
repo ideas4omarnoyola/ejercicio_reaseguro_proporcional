@@ -25,9 +25,14 @@
     <img class="elementos" id="img01" src="../img/pagina11/img01.png" data-posX="0" data-posY="0" alt="">
     <img class="elementos" id="img02" src="../img/pagina11/img02.png" data-posX="0" data-posY="0" alt="">
     <img class="elementos" id="img03" src="../img/pagina11/img03.png" data-posX="0" data-posY="0" alt="">
+    <img class="elementos" id="nota" src="../img/pagina11/nota.png" data-posX="0" data-posY="0" alt="">
     <img class="elementos" id="diagonal1" src="../img/pagina11/diagonal.png" data-posX="891" data-posY="369" alt="">
     <img class="elementos" id="diagonal2" src="../img/pagina11/diagonal.png" data-posX="891" data-posY="452" alt="">
     <img class="elementos" id="diagonal3" src="../img/pagina11/diagonal.png" data-posX="891" data-posY="483" alt="">
+
+    <img class="elementos" id="diagonal4" src="../img/pagina11/diagonal.png" data-posX="891" data-posY="340" alt="">
+    <img class="elementos" id="diagonal5" src="../img/pagina11/diagonal.png" data-posX="891" data-posY="397" alt="">
+    <img class="elementos" id="diagonal6" src="../img/pagina11/diagonal.png" data-posX="891" data-posY="426" alt="">
     
     
     <input class="elementos campos" id="campo1" type="text" text-align="center" placeholder="$" id="cantidad-1"  maxlength="13" data-posX="774.176 " data-posY="370.056"  style="width:103px; height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); " />
@@ -37,6 +42,14 @@
     <input class="elementos campos" id="campo4" type="text" text-align="center" placeholder="$" id="cantidad-1"  maxlength="13" data-posX="909.646" data-posY="370.056"  style="width:103px; height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); " />
     <input class="elementos campos" id="campo5" type="text" text-align="center" placeholder="$" id="cantidad-2"  maxlength="13" data-posX="909.646 " data-posY="453.534 " style="width:103px;  height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/> 
     <input class="elementos campos" id="campo6" type="text" text-align="center" placeholder="$" id="cantidad-3"  maxlength="13" data-posX="909.646" data-posY="482.242 " style="width:103px;  height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); "/>
+
+    <!-- Campor que despistan -->
+    <input class="elementos campos" id="campo7" type="text" text-align="center" placeholder="$" id="cantidad-1"  maxlength="13" data-posX="774" data-posY="340"  style="width:103px; height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); " />
+    <input class="elementos campos" id="campo8" type="text" text-align="center" placeholder="$" id="cantidad-1"  maxlength="13" data-posX="774" data-posY="397"  style="width:103px; height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); " />
+    <input class="elementos campos" id="campo9" type="text" text-align="center" placeholder="$" id="cantidad-1"  maxlength="13" data-posX="774" data-posY="426"  style="width:103px; height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); " />
+    <input class="elementos campos" id="campo10" type="text" text-align="center" placeholder="$" id="cantidad-1"  maxlength="13" data-posX="909" data-posY="340"  style="width:103px; height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); " />
+    <input class="elementos campos" id="campo11" type="text" text-align="center" placeholder="$" id="cantidad-1"  maxlength="13" data-posX="909" data-posY="397"  style="width:103px; height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); " />
+    <input class="elementos campos" id="campo12" type="text" text-align="center" placeholder="$" id="cantidad-1"  maxlength="13" data-posX="909" data-posY="426"  style="width:103px; height:19px; text-align: center; font-size: 12px; font-weight: bold; background-color: rgba(255, 255, 255, 1); " />
     
     <img class="elementos"  id="palomita1"   src="../img/pagina11/palomita.png"  data-posX="762.107" data-posY="340.936 " />
     <img class="elementos"  id="palomita2"   src="../img/pagina11/palomita.png"  data-posX="762.107 " data-posY="365.627 " />
@@ -91,11 +104,15 @@
         const img02 = $('#img02');
         const img03 = $('#img03');
         const btnCasa = $('#btncasa');
+        const nota = $('#nota');
         const datos = $('#datos');
         const cerrar = $('#cerrar');
         const diagonal1 = $('#diagonal1');
         const diagonal2 = $('#diagonal2');
         const diagonal3 = $('#diagonal3');
+        const diagonal4 = $('#diagonal4');
+        const diagonal5 = $('#diagonal5');
+        const diagonal6 = $('#diagonal6');
         
         const campo1  = $('#campo1');
         const campo2  = $('#campo2');
@@ -103,7 +120,14 @@
         const campo4  = $('#campo4');
         const campo5  = $('#campo5');
         const campo6  = $('#campo6');
-
+        
+        const campo7  = $('#campo7');
+        const campo8  = $('#campo8');
+        const campo9  = $('#campo9');
+        const campo10  = $('#campo10');
+        const campo11  = $('#campo11');
+        const campo12  = $('#campo12');
+        
         const campos  = $('.campos');
        
         const verdadero1  = $('#verdadero1');
@@ -172,7 +196,7 @@
       
         const respuesta1 = ["500,000.00", "500000.00", "500000", "500,000"]
         const respuesta2 = ["1,000,000.00" ,"1000000.00","1000000", "1,000,000"]
-        const respuesta3 = ["0","-"]
+        const respuesta3 = ["0","0.00"]
 
         const respuesta4 = ["500,000.00", "500000.00", "500000" , "500,000"]
         const respuesta5 = ["25,000,000.00" ,"25000000.00","25000000" ,"25,000,000"]
@@ -216,6 +240,7 @@
 
             aplicacion.reproducirAudio(audio[2], terminaAudio2, 1);
             animacionEntrada(img02, 'default', 1, 0);
+            animacionEntrada(nota, 'default', 1, 11);
             
             
             animacionEntrada(verdadero1, 'default', 1, 1);
@@ -269,6 +294,10 @@
                     clickF1 = false;
                     puntobtn1=true; 
                     aciertos++;
+
+                    animacionSalida(campo7, 'default', 1, 1);
+                    animacionSalida(campo10, 'default', 1, 1);
+                    animacionSalida(diagonal4, 'default', 1, 1);
                 }
                 preguntaM1 = true;
 
@@ -293,7 +322,11 @@
                     
                     clickF1 = true;
                     clickV1 = false;
-                    puntobtn1=false; 
+                    puntobtn1=false;
+                    
+                    animacionEntrada(campo7, 'default', 1, 1);
+                    animacionEntrada(campo10, 'default', 1, 1);
+                    animacionEntrada(diagonal4, 'default', 1, 1);
                 }
                 preguntaM1 = true;
 
@@ -340,7 +373,6 @@
                     
                     clickV2 = true;
                     clickF2 = false;
-                    puntobtn2=true;
                     
                     animacionEntrada(campo1, 'default', 1, 1);
                     animacionEntrada(campo4, 'default', 1, 1);
@@ -365,6 +397,10 @@
                     clickF3 = false;
                     puntobtn3=true; 
                     aciertos++;
+
+                    animacionSalida(campo8, 'default', 1, 1);
+                    animacionSalida(campo11, 'default', 1, 1);
+                    animacionSalida(diagonal5, 'default', 1, 1);
                 }
                 preguntaM3 = true;
 
@@ -389,6 +425,10 @@
                     clickF3 = true;
                     clickV3 = false;
                     puntobtn3=false; 
+
+                    animacionEntrada(campo8, 'default', 1, 1);
+                    animacionEntrada(campo11, 'default', 1, 1);
+                    animacionEntrada(diagonal5, 'default', 1, 1);
                 }
                 preguntaM3 = true;
 
@@ -410,6 +450,10 @@
                     clickF4 = false;
                     puntobtn4=true; 
                     aciertos++;
+
+                    animacionSalida(campo9, 'default', 1, 1);
+                    animacionSalida(campo12, 'default', 1, 1);
+                    animacionSalida(diagonal6, 'default', 1, 1);
                 }
                 preguntaM4 = true;
 
@@ -434,7 +478,11 @@
                     
                     clickF4 = true;
                     clickV4 = false;
-                    puntobtn4=false; 
+                    puntobtn4=false;
+                    
+                    animacionEntrada(campo9, 'default', 1, 1);
+                    animacionEntrada(campo12, 'default', 1, 1);
+                    animacionEntrada(diagonal6, 'default', 1, 1);
                 }
                 preguntaM4 = true;
 
@@ -481,7 +529,6 @@
                     
                     clickV5 = true;
                     clickF5 = false;
-                    puntobtn5=true;
                     
                     animacionEntrada(campo2, 'default', 1, 1);
                     animacionEntrada(campo5, 'default', 1, 1);
@@ -528,7 +575,6 @@
                     
                     clickV6 = true;
                     clickF6 = false;
-                    puntobtn6=true;
                     
                     animacionEntrada(campo3, 'default', 1, 1);
                     animacionEntrada(campo6, 'default', 1, 1);
@@ -611,116 +657,40 @@ verificar.click(function(){
                     console.log("es valorObtenido2..." + valorObtenido2 );
 
 
-                if(valorObtenido1 == respuesta1[0] && valorObtenido4 == respuesta4[0]){
-                        console.log("Bien :) " + valorObtenido1);                        
-                    animacionEntrada(palomita2, 'default', 1, 0);
-                    aciertos++ 
-                    puntobtn2=true;
-                    console.log("llevo aciertos 1:) " + aciertos);                   
-                }
-                if(valorObtenido2 == respuesta2[0] && valorObtenido5 == respuesta5[0]){
-                    animacionEntrada(palomita5, 'default', 1, 0);
-                    aciertos++
-                    puntobtn5=true;
-                    console.log("llevo aciertos 2 :) " + aciertos);                    
-                }
-                
+                // Valores para la respuesta 1 y 4----------------------------    
+                if(valorObtenido1 == respuesta1[0] || valorObtenido1 == respuesta1[1] || valorObtenido1 == respuesta1[2] || valorObtenido1 == respuesta1[3]){
 
-                 if(valorObtenido1 == respuesta1[1] && valorObtenido4 == respuesta4[1]){
-                        console.log("Bien :) " + valorObtenido1);
-                    animacionEntrada(palomita2, 'default', 1, 0);
-                    aciertos++ 
-                    puntobtn2=true;
-                     console.log("llevo aciertos 1 :) " + aciertos);                         
-                }
-                if(valorObtenido2 == respuesta2[1] && valorObtenido5 == respuesta5[1]){
-                    animacionEntrada(palomita5, 'default', 1, 0);
-                    aciertos++ 
-                     puntobtn5=true;
-                     console.log("llevo aciertos 2 :) " + aciertos);                         
-                }
-                
-
-                 if(valorObtenido1 == respuesta1[2] && valorObtenido4 == respuesta4[2]){
-                        console.log("Bien :) " + valorObtenido1);
-                    animacionEntrada(palomita2, 'default', 1, 0);
-                    aciertos++ 
-                    puntobtn2=true;
-                     console.log("llevo aciertos 1 :) " + aciertos);                         
-                }
-                if(valorObtenido2 == respuesta2[2] && valorObtenido5 == respuesta5[2]){
-                    animacionEntrada(palomita5, 'default', 1, 0);
-                    aciertos++ 
-                     puntobtn5=true;
-                     console.log("llevo aciertos 2 :) " + aciertos);                         
-                }
-
-                if(valorObtenido1 == respuesta1[3] && valorObtenido4 == respuesta4[3]){
-                        console.log("Bien :) " + valorObtenido1);                        
-                    animacionEntrada(palomita2, 'default', 1, 0);
-                    aciertos++ 
-                    puntobtn2=true;
-                    console.log("llevo aciertos 1:) " + aciertos);                   
-                }
-                if(valorObtenido2 == respuesta2[3] && valorObtenido5 == respuesta5[3]){
-                    animacionEntrada(palomita5, 'default', 1, 0);
-                    aciertos++
-                    puntobtn5=true;
-                    console.log("llevo aciertos 2 :) " + aciertos);                    
+                    if(valorObtenido4 == respuesta4[0] || valorObtenido4 == respuesta4[1] || valorObtenido4 == respuesta4[2] || valorObtenido4 == respuesta4[3]){                      
+                        animacionEntrada(palomita2, 'default', 1, 0);
+                        aciertos++ 
+                        puntobtn2=true;
+                        console.log("llevo aciertos 1:) " + aciertos);  
+                    }
                 }
 
                 
-                if(valorObtenido3 == respuesta3[0] && valorObtenido6 == respuesta6[0]){
-                    animacionEntrada(palomita6, 'default', 1, 0);
-                    aciertos++ 
-                    puntobtn6=true;
-                    console.log("llevo aciertos 3 :) " + aciertos);                   
-                }
-                if(valorObtenido3 == respuesta3[0] && valorObtenido6 == respuesta6[1]){
-                    animacionEntrada(palomita6, 'default', 1, 0);
-                    aciertos++ 
-                    puntobtn6=true;
-                    console.log("llevo aciertos 3 :) " + aciertos);                   
-                }
-                if(valorObtenido3 == respuesta3[1] && valorObtenido6 == respuesta6[0]){
-                    animacionEntrada(palomita6, 'default', 1, 0);
-                    aciertos++
-                    puntobtn6=true; 
-                    console.log("llevo aciertos 3 :) " + aciertos);                         
-                }
-                if(valorObtenido3 == respuesta3[1] && valorObtenido6 == respuesta6[1]){
-                    animacionEntrada(palomita6, 'default', 1, 0);
-                    aciertos++
-                    puntobtn6=true; 
-                    console.log("llevo aciertos 3 :) " + aciertos);                         
-                }
+                // Valores para la respuesta 2 y 5----------------------------    
+                if(valorObtenido2 == respuesta2[0] || valorObtenido2 == respuesta2[1] || valorObtenido2 == respuesta2[2] || valorObtenido2 == respuesta2[3]){
 
-                if(valorObtenido3 == respuesta3[0] && valorObtenido6 == respuesta6[2]){
-                    animacionEntrada(palomita6, 'default', 1, 0);
-                    aciertos++
-                    puntobtn6=true; 
-                    console.log("llevo aciertos 3 :) " + aciertos);                         
+                    if(valorObtenido5 == respuesta5[0] || valorObtenido5 == respuesta5[1] || valorObtenido5 == respuesta5[2] || valorObtenido5 == respuesta5[3]){
+                        animacionEntrada(palomita5, 'default', 1, 0);
+                        aciertos++
+                        puntobtn5=true;
+                        console.log("llevo aciertos 2 :) " + aciertos);   
+                    }           
                 }
                 
-                if(valorObtenido3 == respuesta3[1] && valorObtenido6 == respuesta6[2]){
-                    animacionEntrada(palomita6, 'default', 1, 0);
-                    aciertos++
-                    puntobtn6=true; 
-                    console.log("llevo aciertos 3 :) " + aciertos);                         
+                // Valores para la respuesta 3 y 6----------------------------    
+                if(valorObtenido3 == respuesta3[0] || valorObtenido3 == respuesta3[1]){
+
+                    if(valorObtenido6 == respuesta6[0] || valorObtenido6 == respuesta6[1] || valorObtenido6 == respuesta6[2] || valorObtenido6 == respuesta6[3]){
+                        animacionEntrada(palomita6, 'default', 1, 0);
+                        aciertos++ 
+                        puntobtn6=true;
+                        console.log("llevo aciertos 2 :) " + aciertos);   
+                    }           
                 }
 
-                if(valorObtenido3 == respuesta3[0] && valorObtenido6 == respuesta6[3]){
-                    animacionEntrada(palomita6, 'default', 1, 0);
-                    aciertos++ 
-                    puntobtn6=true;
-                    console.log("llevo aciertos 3 :) " + aciertos);                   
-                }
-                if(valorObtenido3 == respuesta3[1] && valorObtenido6 == respuesta6[3]){
-                    animacionEntrada(palomita6, 'default', 1, 0);
-                    aciertos++ 
-                    puntobtn6=true;
-                    console.log("llevo aciertos 3 :) " + aciertos);                   
-                }
                 
 
 
